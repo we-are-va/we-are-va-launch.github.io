@@ -1,0 +1,181 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Elements"
+    - var title = "Typography"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "We love words"
+    -var header_small = "typography"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Elements
+        li.active Typography
+    section.text-center.text-sm-left
+        .container
+            .row.typography
+                .col-md-12
+                    h1 H1 Heading
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi quae tenetur unde. Accusantium alias aperiam, atque dolor doloribus, eius eveniet expedita expl
+                .col-md-10
+                    h2 H2 Heading
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi quae tenetur unde. Accusantium alias aperiam, atque dolor doloribus, eius eveniet expedita expl
+                .col-md-8
+                    h3 H3 Heading
+                    p.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi quae tenetur un
+                .col-md-7
+                    h4 H4 Heading
+                    p.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi quae tenetur un
+                .col-md-7
+                    h5 H5 Heading
+                    p.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi quae tenetur un
+                .col-md-7
+                    h6 H6 Heading
+                    p.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi quae tenetur un
+
+    section.well.text-center.text-sm-left
+        .container
+            h5.text-bold Blockquote
+            hr
+            .row
+                .col-md-8
+                    blockquote.quote
+                        p.
+                            Design is the fundamental soul of a man-made creation that ends up expressing itself in successive outer layers of the product or service. The iMac is not just the color or translucence or the shape of the shell. The essence of the iMac is to be the finest possible consumer computer in which each element plays together.
+
+                        footer
+                            cite(title="Source Title") Steve Jobs
+
+    section.well.text-center.text-sm-left
+        .container
+            h5.text-bold HTML Text Elements
+            hr
+
+            p.
+                #[a(href='#') This is a link text] Lorem Ipsum is simply dummy text of the printing and typesetting industry. #[strong  This is a bold text]  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, consequatur culpa cumque dolore dolorem dolores eligendi est in incidunt iusto magni molestias nisi
+
+            p.
+                #[mark This is a highlighted text] ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias amet, at consectetur consequatur consequuntur #[em This is an italic Text] Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus #[span.text-light-clr(data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit") Tooltips], consectetur adipisicing elit. A accusamus ad alias amet, at consectetur provident quaerat quos
+
+            p.
+                #[del This is a strickethrough text] sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. #[u This is an underlined text] nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+
+            .row.flow-offset-2
+                .col-sm-6.col-lg-3
+                    h5.text-bold Unordered List
+                    ul.marked-list.max-width-xs
+                        li: a(href='#') Highly Customizable
+                        li: a(href='#') Pre-Built Pages
+                        li: a(href='#') Clean Design
+                        li: a(href='#') Extensive Options
+                        li: a(href='#') Top Notch Quality
+                        li: a(href='#') Responsive Design
+                        li: a(href='#') Powered Page Builder
+                        li: a(href='#') SEO Optimized
+                        li: a(href='#') Outstanding Support
+
+                .col-sm-6.col-lg-3
+                    h5.text-bold Ordered List
+                    ol.ordered-list.max-width-xs
+                        li: a(href='#') Highly Customizable
+                        li: a(href='#') Pre-Built Pages
+                        li: a(href='#') Clean Design
+                        li: a(href='#') Extensive Options
+                        li: a(href='#') Top Notch Quality
+                        li: a(href='#') Responsive Design
+                        li: a(href='#') Powered Page Builder
+                        li: a(href='#') SEO Optimized
+                        li: a(href='#') Outstanding Support
+
+
+    section.well.text-center.text-md-left
+        .container
+            h5.text-bold Icon List
+            hr
+            .row.flow-offset-1
+                .col-sm-12.col-md-4
+                    .box-md
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-cubes
+                        .box__body.box__middle
+                            h5 Isotope & Grid Layouts
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias amet, at consectetur consequatur consequuntur culpa dicta dolore dolorem eius eos error eveniet hic
+                .col-sm-12.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-cube
+                        .box__body.box__middle
+                            h5 Woocommerce Ready
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias amet, at consectetur consequatur consequuntur culpa dicta dolore dolorem eius eos error eveniet hic
+                .col-sm-12.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-columns
+                        .box__body.box__middle
+                            h5 Equal Heights Grid
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias amet, at consectetur consequatur consequuntur culpa dicta dolore dolorem eius eos error eveniet hic
+
+            .row.offset-1
+                .col-xs-12
+                    h5.text-bold Links
+                    hr
+                    p
+                        |Normal Link<br>
+                        span.text-primary Hover Link<br>
+                        span.text-primary Press Link
+
+    section.well.text-center.text-md-left
+        .container
+            h5.text-bold Image Centered
+            hr
+            .row
+                .col-xs-12
+                    figure
+                        img(src="images/image-1.jpg" alt="")
+                        figcaption
+                            p Snowy Mountains in the Swiss Alps
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad alias amet, at consectetur consequatur consequuntur culpa dicta dolore dolorem eius eos error eveniet hic id illo iste itaque libero molestias, nam natus nisi nobis nostrum numquam officia officiis
+            h5.text-bold.offset-1 Image Left
+            hr
+            .row
+                .col-md-6
+                    img(src="images/image-2.jpg" alt="")
+                .col-md-6.col-lg-5.col-lg-offset-1
+                    p.inset-sm.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident
+            h5.text-bold.offset-1 Image Right
+            hr
+            .row
+                .col-md-5.col-md-offset-1.col-lg-6.pull-md-right
+                    img(src="images/image-3.jpg" alt="")
+
+                .col-md-6.col-lg-5
+                    p.inset-sm.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

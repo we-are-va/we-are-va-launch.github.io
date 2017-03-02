@@ -1,0 +1,113 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "FAQ Page"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "All your Questions answered in one place"
+    -var header_small = "FAQ"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active: a(href="#") FAQs
+
+
+    = '\n'
+    //Start section
+    section.well.well-sm.section-border
+        .container
+            h1.text-bold.text-center Some of Your Questions
+            .row
+                .col-xs-12
+                    .responsive-tabs(data-type="accordion")
+                        ul.resp-tabs-list
+                            li How can I become an author?
+                            li Helpful Resources for Authors
+                            li How much money can I make?
+                            li Can I offer my items for free on a promotional basis?
+                            li An Introduction to the Marketplaces for Authors
+                            li How does the Tuts+ Premium affiliate program work?
+                            li What Images, Videos, Code or Music Can I Use in my Items?
+                            li Can I use trademarked names in my items?
+                            li Tips for Increasing Your Referral Income
+                            li How can I get support for an item which isn't working correctly?
+
+                        div.resp-tabs-container
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    //End section
+
+    = '\n'
+    //Start section
+    section
+        .container
+            .row.section-border.well.well-sm
+                .col-xs-12
+                    h1.text-bold.text-center.text-md-left Some of your Questions
+                    ul.marked-list.offset-2.questions
+                        li.text-primary.big: a(href='#q1').text-base How can I become an author?
+                        li.text-primary.big: a(href='#q2').text-base Helpful Resources for Authors
+                        li.text-primary.big: a(href='#q3').text-base How much money can I make?
+                        li.text-primary.big: a(href='#q4').text-base Can I offer my items for free on a promotional basis?
+                        li.text-primary.big: a(href='#q5').text-base An Introduction to the Marketplaces for Authors
+                        //-li.text-primary.big: a(href='#q6').text-base How does the Tuts+ Premium affiliate program work?
+                        //-li.text-primary.big: a(href='#q7').text-base What Images, Videos, Code or Music Can I Use in my Items?
+                        //-li.text-primary.big: a(href='#q8').text-base Can I use trademarked names in my items?
+                        //-li.text-primary.big: a(href='#q9').text-base Tips for Increasing Your Referral Income
+                        //-li.text-primary.big: a(href='#q10').text-base How can I get support for an item which isn't working correctly?
+                        //-li.text-primary.big: a(href='#q11').text-base How do I pay for items on the Marketplaces?
+            .row.section-border.well#q1
+                .col-xs-12
+                    p.lead.font-secondary.text-darker-clr Q. How do I become an author?
+                    p.h6.letter-spacing-null.font-base.text-base.inset-1.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            .row.section-border.well#q2
+                .col-xs-12
+                    p.lead.font-secondary.text-darker-clr Q. Helpful Resources for Authors
+                    p.h6.letter-spacing-null.font-base.text-base.inset-1.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+            .row.section-border.well#q3
+                .col-xs-12
+                    p.lead.font-secondary.text-darker-clr Q. How much money can I make?
+                    p.h6.letter-spacing-null.font-base.text-base.inset-1.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            .row.section-border.well#q4
+                .col-xs-12
+                    p.lead.font-secondary.text-darker-clr Q. Can I offer my items for free on a promotional basis?
+                    p.h6.letter-spacing-null.font-base.text-base.inset-1.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            .row.section-border.well#q5
+                .col-xs-12
+                    p.lead.font-secondary.text-darker-clr Q. An Introduction to the Marketplaces for Authors
+                    p.h6.letter-spacing-null.font-base.text-base.inset-1.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

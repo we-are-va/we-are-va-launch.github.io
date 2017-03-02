@@ -1,0 +1,73 @@
+
+
+doctype html
+
+//-- var title = "Home"
+//-- var active = "Home"
+
+block vars
+
+html(lang="en").wide.wow-animation
+
+    head
+        //Site Title
+        title #{title}
+        meta(charset="utf-8")
+        meta(name="format-detection" content="telephone=no")
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        = '\n'
+
+        //Stylesheets
+        //-link(href='//fonts.googleapis.com/css?family=Pacifico|Lato:400,100,100italic,300,300italic,700,400italic,900,700italic,900italic|Montserrat:400,700' rel='stylesheet' type='text/css')
+        link(rel="icon" href="images/favicon.ico" type="image/x-icon")
+        = '\n'
+
+        //Bootstrap
+        link(rel="stylesheet" href="css/style.css")
+        = '\n'
+        block head
+
+
+        <!--[if lt IE 10]>
+        div(style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;')
+            a(href="http://windows.microsoft.com/en-US/internet-explorer/..")
+                img(src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.")
+        script(src="js/html5shiv.min.js")
+        <[endif]-->
+    = '\n'
+
+    body
+        //The Main Wrapper
+        .page
+            //
+                ========================================================
+                                        HEADER
+                ========================================================
+            block header
+
+
+            //
+                ========================================================
+                                        CONTENT
+                ========================================================
+            main.page-content
+
+                block content
+
+            //
+                ========================================================
+                                        FOOTER
+                ========================================================
+            block footer
+
+        //Core Scripts
+
+        <script src="js/core.min.js"></script>
+        //jQuery (necessary for Bootstrap's JavaScript plugins)
+        //Include all compiled plugins (below), or include individual files as needed
+        script(src="js/bootstrap.min.js")
+        //Additional Functionality Scripts
+        script(src="js/script.js")
+
+
+        block body_end

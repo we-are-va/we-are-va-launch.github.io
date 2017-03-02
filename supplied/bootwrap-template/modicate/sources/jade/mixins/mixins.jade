@@ -1,0 +1,24 @@
+mixin lists(tag, class_name, link_class, items)
+
+    #{tag}(class="#{class_name}")
+        - var length = link_class.length
+        if (items.length >= length)
+            - length = items.length
+            - for (var j = 0; j < length; j++)
+                if (link_class[j]!= undefined)
+                    li: a(href="#")(class="#{link_class[j]}") #{items[j]}
+                else
+                    - link_class[j]= ''
+                    li: a(href="#")(class="#{link_class[j]}") #{items[j]}
+        else
+            - length = link_class.length
+            - for (var j = 0; j < length; j++)
+                if (items[j]!= undefined)
+                    li: a(href="#")(class="#{link_class[j]}") #{items[j]}
+                else
+                    - items[j]= ''
+                    li: a(href="#")(class="#{link_class[j]}") #{items[j]}
+
+        //-else
+        //-    each item in items
+        //-        li: a(href="#")(class="#{link_class}") #{item}

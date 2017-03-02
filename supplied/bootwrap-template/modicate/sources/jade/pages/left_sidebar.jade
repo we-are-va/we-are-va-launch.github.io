@@ -1,0 +1,83 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "With left sidebar"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "About Our Multipurpose Theme"
+    -var header_small = "Left sidebar"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active: a(href="#") Left sidebar
+
+
+    = '\n'
+    //Start section
+    section.text-center.text-md-left.well.well-sm.section-border
+        .container
+            .row
+                .col-md-3.sidebar
+                    h5 Sed Diam Nonumy
+                    p.text-justify.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+                    h5 Latest Projects
+                    .img-box
+                        a(href='#'): img(src='images/sidebar-2.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-3.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-4.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-5.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-6.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-7.jpg' alt='')
+
+                    h5 Latest News
+                    ul.list-unstyled-2
+                        li: a.text-primary(href='#') Trends in UX Design
+                        li: a.text-primary(href='#') The little Person inside
+                        li: a.text-primary(href='#') Inspirational Quote
+                        li: a.text-primary(href='#') The Exploration
+                        li: a.text-primary(href='#') Places to get lost
+
+                    h5 Sponsor Widgets
+                    .img-box
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+
+
+                .col-md-8.col-md-offset-1
+                    h1.text-bold With Left Sidebar
+                    .row
+                        .col-xs-12
+                            p.lead.text-justify.
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            img(src='images/sidebar-1.jpg' alt='').offset-2
+                            p.lead.offset-2.text-justify.
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+                                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br><br>
+                                                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+                                                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+
+
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

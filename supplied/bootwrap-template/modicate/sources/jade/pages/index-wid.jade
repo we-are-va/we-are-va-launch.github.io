@@ -1,0 +1,222 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Features"
+    - var title = "Footer Widget Light"
+    - var header_class = "page-header"
+
+block head
+
+block header
+
+    -var header_h1 = "You Can Create Landing Pages"
+    -var header_small = "With 120 Carts In 12 Categories"
+    -var header_big = "We create quality products <br> tailored to your needs and requirements."
+    -var header_content = "<div class='btn-group-variant'> <a class='btn btn-default round-xl btn-sm' href='#'>Buy A Theme</a> <a class='btn btn-default round-xl btn-sm' href='#'>View Features</a></div>"
+
+    include ../features/header_transparent
+
+block content
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm
+        .container
+            .row
+                .col-lg-10.col-lg-offset-1
+                    h1.text-bold Creative Multiuse   Theme
+                    p.lead.big.
+                        We create #[a(href='#').text-primary user interfaces] and modern #[a(href='#').text-primary websites]. We will help you build strong #[a(href='#').text-primary online business] by creating a professional website which best suits your needs.
+                    img(src="images/index_img1.jpg" alt="").box-shadow.offset-2.margin-negative
+    //End section
+
+    = '\n' 
+    //Start section
+    section.well.well-sm.bg-lighter.relative.text-center
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3
+                    h1.text-bold Some Features
+                    p.lead.
+                        We worked out an amazing combination of vast functionality
+                        and user's comfort. It will totally impress you with its power!
+            .row.offset-1.text-md-left.flow-offset-1
+                .col-sm-6.col-md-3
+                    span.icon.icon-lg.icon-primary.fa-heartbeat
+                    h5 Retina Ready
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+                .col-sm-6.col-md-3
+                    span.icon.icon-lg.icon-primary.fa-compass
+                    h5 Incredibly Flexible
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+                .col-sm-6.col-md-3
+                    span.icon.icon-lg.icon-primary.fa-edit
+                    h5 Clean Design
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+                .col-sm-6.col-md-3
+                    span.icon.icon-lg.icon-primary.fa-comments-o
+                    h5 Quick Support
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+    //End section
+
+    = '\n'
+    //Start section
+    section.well.well-sm.text-center.text-md-left
+        .container
+            .row
+                .col-md-6.col-lg-5
+                    h1.text-bold About Company
+                    p.lead.
+                        We are a studio that aims to make our users experience easier and much more pleasant. <br><br>You probably won't have a better opportunity to make sure of our competence, as well as friendliness towards our customers.
+                .col-md-6.col-lg-6.col-lg-offset-1.text-left
+                    p.font-secondary.big.text-uppercase.text-light-clr.inset-2 CREATIVE DESIGN
+                    .progress
+                        .progress-bar(role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100")
+                        span.small.text-light-clr
+                    p.font-secondary.big.text-uppercase.text-light-clr BRANDING
+                    .progress
+                        .progress-bar(role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")
+                        span.small.text-light-clr
+                    p.font-secondary.big.text-uppercase.text-light-clr SUPPORT
+                    .progress
+                        .progress-bar(role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100")
+                        span.small.text-light-clr
+    //End section
+
+    = '\n'
+    //Start section
+    section.bg-dark-var1.text-center
+        .container.counter-panel
+            .row
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="197")
+                    p.text-opacity.font-secondary.text-uppercase CUPS OF COFFEE
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="23")
+                    p.text-opacity.font-secondary.text-uppercase coders
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="98")
+                    p.text-opacity.font-secondary.text-uppercase designers
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="7230")
+                    p.text-opacity.font-secondary.text-uppercase lines
+    //End section
+
+    = '\n'
+    //Start section
+    section.well.well-sm.text-center.section-border
+        .container
+            ul.flex-list
+                li: a(href='#'): img(src="images/partner1.png" alt="")
+                li: a(href='#'): img(src="images/partner2.png" alt="")
+                li: a(href='#'): img(src="images/partner3.png" alt="")
+                li: a(href='#'): img(src="images/partner4.png" alt="")
+                li: a(href='#'): img(src="images/partner5.png" alt="")
+                li: a(href='#'): img(src="images/partner6.png" alt="")
+    //End section
+
+    = '\n'
+    //Start section
+    section.well.well-sm.well-inset-2.text-center.text-md-left
+        .container
+            h1.text-bold.text-center Latest From The Blog
+            .row.flow-offset-2
+                .col-md-4
+                    article.thumbnail.thumbnail-4
+                        img(src="images/index_img2.jpg" alt="")
+                        .caption
+                            h4: a(href='blog_post.html') This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+                .col-md-4
+                    article.thumbnail.thumbnail-4
+                        img(src="images/index_img3.jpg" alt="")
+                        .caption
+                            h4: a(href='blog_post.html') This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+                .col-md-4
+                    article.thumbnail.thumbnail-4
+                        img(src="images/index_img4.jpg" alt="")
+                        .caption
+                            h4: a(href='blog_post.html') This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+    //End section
+
+    = '\n'
+    //Start section
+    section.well.well-sm.well-inset-3.bg-image.bg-image-1.text-center
+        .container
+            .row
+                .col-md-8.col-md-offset-2
+                    h1.text-bold Subscribe to Our Newsletter
+                    p.lead.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus eum exercitationem
+                    form.form-width-1.offset-1
+                        div.form-group
+                            input(type="email" placeholder="Name@domainname.com").width-1.form-control#exampleInputEmail1
+
+                            button(type="submit").btn.btn-primary.btn-xs.round-xl Subscribe
+    //End section
+
+    = '\n'
+    //Start section
+    section.well.well-sm.well-inset-2.text-center
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3
+                    h1.text-bold.text-center Testimonials
+                    p.lead.
+                        Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!
+            .row.offset-1
+                //Owl Carousel
+                .owl-carousel(data-items='1' data-sm-items='2' data-xs-items='1' data-md-items='3' data-nav="true" data-margin="30")
+                    .owl-item
+                        blockquote.quote-2
+                            img(src="images/index_img5.jpg" alt="").img-circle
+                            h6: cite Jennifer Rogers
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.h6.text-italic.font-base.text-base
+                                q Lectus tincidunt pellentesque augue urna sit sed, arcu sed ante ac montes pellentesque consectetuer, neque magnis penatibus laoreet vehicula nulla orci, a malesuada justo laoreet ipsum, in ac fusce.
+
+                    .owl-item
+                        blockquote.quote-2
+                            img(src="images/index_img6.jpg" alt="").img-circle
+                            h6: cite Walter Williams
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.h6.text-italic.font-base.text-base
+                                q Lectus tincidunt pellentesque augue urna sit sed, arcu sed ante ac montes pellentesque consectetuer, neque magnis penatibus laoreet vehicula nulla orci, a malesuada justo laoreet ipsum, in ac fusce.
+
+                    .owl-item
+                        blockquote.quote-2
+                            img(src="images/index_img7.jpg" alt="").img-circle
+                            h6: cite Derrick Whitehead
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.h6.text-italic.font-base.text-base
+                                q Lectus tincidunt pellentesque augue urna sit sed, arcu sed ante ac montes pellentesque consectetuer, neque magnis penatibus laoreet vehicula nulla orci, a malesuada justo laoreet ipsum, in ac fusce.
+    //End section
+
+
+
+
+block footer
+    -var footer_class = "page-footer footer-widget text-center"
+    include ../features/footer_widget

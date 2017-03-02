@@ -1,0 +1,185 @@
+block menu-vars
+
+//-var  rd_navbar_class_ajuster = "bg-white top-panel-none"
+//-var  rd_navbar_data_ajuster = "rd-navbar-sidebar"
+
+-var o
+
+= '\n'
+//RD Navbar
+.rd-navbar-wrap
+  nav&attributes(rd_navbar_data_ajuster).rd-navbar(class="#{rd_navbar_class_ajuster}")
+    .rd-navbar-top-panel
+      .rd-navbar-inner
+        button.rd-navbar-collapse-toggle(data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart")
+          span
+        a.fa-envelope(href="mailto:#") demomail@domail.com
+        a.fa-phone(href="callto:#") +1 (126) 598-89-75
+        ul.list-inline.pull-right
+          li: a.fa-facebook(href="#")
+          li: a.fa-pinterest-p(href="#")
+          li: a.fa-twitter(href="#")
+          li: a.fa-google-plus(href="#")
+          li: a.fa-instagram(href="#")
+    .rd-navbar-inner
+      = '\n'
+      //RD Navbar Panel
+      .rd-navbar-panel
+        = '\n'
+
+        //RD Navbar Toggle
+        button.rd-navbar-toggle(data-rd-navbar-toggle=".rd-navbar")
+          span
+        //END RD Navbar Toggle
+        = '\n'
+
+        //RD Navbar Brand
+        div.rd-navbar-brand
+          a(href="index.html").brand-name Modicate
+        //END RD Navbar Brand
+      //END RD Navbar Panel
+      = '\n'
+
+      .rd-navbar-nav-wrap
+
+        a.fa-shopping-cart(href='shop-cart.html')
+
+        //RD Navbar Search
+        .rd-navbar-search
+          form.rd-navbar-search-form(action="search.php" method="GET")
+            label.rd-navbar-search-form-input
+              input(type="text" name="s" placeholder="Search.." autocomplete="off")
+            button.rd-navbar-search-form-submit(type="submit")
+          span.rd-navbar-live-search-results
+          button.rd-navbar-search-toggle(data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-live-search-results")
+        //END RD Navbar Search
+        = '\n'
+
+        //RD Navbar Nav
+        ul.rd-navbar-nav
+          li(class=(active == 'Home' ? 'active' : '')): a(href="./") Home
+          li(class=(active == 'Elements' ? 'active' : ''))
+            a(href="#") Elements
+            = '\n'
+            //RD Navbar Dropdown
+            ul.rd-navbar-dropdown
+
+              li: a(href="accourdions_tabs.html") Tabs & Accordions
+              li: a(href="typography.html") Typography
+              li: a(href="forms.html") Forms
+              li: a(href="buttons.html") Buttons
+              li: a(href="grid.html") Grid
+              li: a(href="icons.html") Icons
+              li: a(href="tables.html") Tables
+              li: a(href="progress_bars.html") Progress bars
+
+            //END RD Navbar Dropdown
+
+
+          li(class=(active == 'Features' ? 'active' : ''))
+            a(href="#") Features
+            ul.rd-navbar-dropdown
+              li: a(href="index-parallax.html") Header Parallax
+              li: a(href="index.html") Header Transparent
+              li: a(href="index-cent.html") Header Centre, Footer Light
+              li: a(href="index-min.html") Header Minimal, Footer Light
+              li: a(href="index-topbar.html") Header Corporate
+              li: a(href="index-sidebar.html") Header Hamburger Menu
+              li: a(href="index-cent-dark.html") Footer Centre Dark
+              li: a(href="index-min-dark.html") Footer Minimal Dark
+              li: a(href="index-wid.html") Footer Widget Light
+              li: a(href="index-wid-dark.html") Footer Widget Dark
+
+          li(class=(active == 'Extras' ? 'active' : ''))
+            a(href="#") Extras
+            ul.rd-navbar-dropdown
+              li: a(href="404.html") 404
+              li: a(href="coming.html") Coming soon
+              li: a(href="login.html") Login page
+              li: a(href="maintenance.html") Maintenance page
+              li: a(href="register.html") Register page
+              li: a(href="search-res.html") Search results page
+              li: a(href="terms.html") Terms of Service
+
+          li(class=(active == 'Pages' ? 'active' : '')).dropdown-megamenu
+            a(href="#") Pages
+
+            = '\n'
+            //RD Navbar Megamenu
+            ul.rd-navbar-megamenu
+              li
+                p Pages
+                ul
+                  li
+                    a(href="index-variant-2.html") Home Variant 2
+                    span.marked new
+                  li: a(href="about.html") About Us
+                  li: a(href="our-team.html") Our Team
+                  li: a(href="team-member.html") Team member profile
+                  li: a(href="contact_us.html") Contact Us
+                  li: a(href="contact_us_2.html") Contact Us 2
+                  li: a(href="pricing.html") Pricing
+                  li: a(href="services.html") Services page
+                  li: a(href="clients.html") Clients Page
+                  li: a(href="faq.html") FAQ Page
+              li
+                p Pages 2
+                ul
+                  li: a(href="left_sidebar.html") With left sidebar
+                  li: a(href="right_sidebar.html") With right sidebar
+                  li: a(href="no_sidebar.html") Without sidebar
+                  li: a(href="blog_default.html") Default Blog
+                  li: a(href="blog_columns_2.html") 2 Columns Blog
+                  li: a(href="blog_columns_3.html") 3 Columns Blog
+                  li: a(href="blog_archive.html") Archive page
+                  li: a(href="blog_post.html") Post page
+                  li: a(href="timeline.html") Timeline
+              li
+                p Layouts
+                ul
+                  li: a(href="index.html") Header Transparent
+                  li: a(href="index-cent.html") Header Centre, Footer Light
+                  li: a(href="index-min.html") Header Minimal, Footer Light
+                  li: a(href="index-topbar.html") Header Corporate
+                  li: a(href="index-sidebar.html") Header Hamburger Menu
+                  li: a(href="index-cent-dark.html") Footer Centre Dark
+                  li: a(href="index-min-dark.html") Footer Minimal Dark
+                  li: a(href="index-wid.html") Footer Widget Light
+                  li: a(href="index-wid-dark.html") Footer Widget Dark
+
+              li
+                p E-commerce
+                ul
+                  li: a(href="shop-catalog.html") Product catalog
+                  li: a(href="shop-product.html") Single product
+                  li: a(href="shop-cart.html") Shopping cart
+                  li: a(href="shop-checkout.html") Checkout
+            //END RD Navbar Megamenu
+
+          li(class=(active == 'Blog' ? 'active' : ''))
+            a(href="#") Blog
+            ul.rd-navbar-dropdown
+              li: a(href="blog_default.html") Default Blog
+              li: a(href="blog_columns_2.html") 2 Columns Blog
+              li: a(href="blog_columns_3.html") 3 Columns Blog
+              li: a(href="blog_archive.html") Archive page
+              li: a(href="blog_post.html") Post page
+              li: a(href="timeline.html") Timeline #[span.marked hot]
+
+          li(class=(active == 'Gallery' ? 'active' : ''))
+            a(href="#") Gallery
+            ul.rd-navbar-dropdown
+              li: a(href="gallery-1.html") Grid Padding Gallery
+              li: a(href="gallery-2.html") Grid No Padding Gallery
+              li: a(href="gallery-3.html") Grid Masonry
+              li: a(href="gallery-4.html") Grid Cobbles
+
+          li(class=(active == 'Shop' ? 'active' : ''))
+            a(href="#") Shop
+            ul.rd-navbar-dropdown
+              li: a(href="shop-catalog.html") Product catalog
+              li: a(href="shop-product.html") Single product
+              li: a(href="shop-cart.html") Shopping cart
+              li: a(href="shop-checkout.html") Checkout
+        //END RD Navbar Nav
+//END RD Navbar

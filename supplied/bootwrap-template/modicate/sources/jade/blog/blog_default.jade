@@ -1,0 +1,151 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Blog"
+    - var title = "Default blog"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Our Latest News"
+    -var header_small = "Blog"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb
+                    li: a(href="index.html") Home
+                    li: a(href="#") Blog
+                    li.active: a(href="#") Default blog
+
+    = '\n'
+    //Start section
+    section.text-center.text-md-left.offset-1
+        .container
+            .row
+                .col-xs-12.section-border
+                    article.thumbnail.well
+                        img(src="images/blog-1.jpg" alt="")
+                        .caption
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a.badge.fa-user.text-uppercase.font-secondary Admin
+                                    span.tags
+                                        a.badge.fa-tags
+                                        a.post-tag.round-xl.small General
+                                        a.post-tag.round-xl.small Media
+                                    a.badge.fa-comments.text-uppercase.font-secondary 13 comments
+                                a(href="blog_post.html").btn-link Read More
+
+
+
+                = '\n'
+                //Start section video
+
+                .col-xs-12.section-border
+                    article.well
+                        //16:9 aspect ratio
+                        .embed-responsive.embed-responsive-16by9
+                            iframe.embed-responsive-item(src="https://www.youtube.com/embed/0eH-HMHVaiI?wmode=transparent"  allowfullscreen)
+
+                        h4: a(href="blog_post.html") This is a Standard Post with an Embedded Video
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.
+                        .blog-info
+                            .pull-md-left
+                                time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                a.badge.fa-user.text-uppercase.font-secondary Admin
+                                span.tags
+                                    a.badge.fa-tags
+                                    a.post-tag.round-xl.small General
+                                    a.post-tag.round-xl.small Media
+                                a.badge.fa-comments.text-uppercase.font-secondary 13 comments
+                            a(href="blog_post.html").btn-link Read More
+
+                //End video
+
+
+                = '\n'
+                //Start section slider
+
+                .col-xs-12.section-border
+                    article.well
+                        //Swiper
+                        .swiper-container.swiper-slider(data-autoplay="5000" data-slide-effect="fade" data-loop="false" data-height="36.32478632478632%")
+                            .swiper-wrapper
+                                .swiper-slide(data-slide-bg="images/blog-1.jpg")
+                                    .swiper-slide-caption
+
+                                .swiper-slide(data-slide-bg="images/blog-2.jpg")
+                                    .swiper-slide-caption
+
+                        h4: a(href="blog_post.html") This is a Standard Post with a Slider Gallery
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.
+                        .blog-info
+                            .pull-md-left
+                                time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                a.badge.fa-user.text-uppercase.font-secondary Admin
+                                span.tags
+                                    a.badge.fa-tags
+                                    a.post-tag.round-xl.small General
+                                    a.post-tag.round-xl.small Media
+                                a.badge.fa-comments.text-uppercase.font-secondary 13 comments
+                            a(href="blog_post.html").btn-link Read More
+
+                //End slider
+
+                = '\n'
+                //Start quote
+
+                .col-xs-12.section-border
+                    article.well
+                        blockquote.quote
+                            p.
+                                Design is the fundamental soul of a man-made creation that ends up expressing itself in successive outer layers of the product or service. The iMac is not just the color or translucence or the shape of the shell. The essence of the iMac is to be the finest possible consumer computer in which each element plays together.
+                            footer
+                                cite(title="Source Title") Steve Jobs
+
+                        .blog-info
+                            .pull-md-left
+                                time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                a.badge.fa-user.text-uppercase.font-secondary Admin
+                                span.tags
+                                    a.badge.fa-tags
+                                    a.post-tag.round-xl.small General
+                                    a.post-tag.round-xl.small Media
+                                a.badge.fa-comments.text-uppercase.font-secondary 13 comments
+                            a(href="#").btn-link Read More
+
+                //End quote
+
+    = '\n'
+    //Start section
+    section.well.text-center.text-md-left
+        .container
+            div.col-inset-2.text-center.btn-group(aria-label="First group" role="group")
+                a(href='#').btn.btn-default.round-small.active 1
+                a(href='#').btn.btn-default.round-small 2
+                a(href='#').btn.btn-default.round-small 3
+                span.text-light-clr.font-secondary ...
+                a(href='#').btn.btn-default.round-small 8
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

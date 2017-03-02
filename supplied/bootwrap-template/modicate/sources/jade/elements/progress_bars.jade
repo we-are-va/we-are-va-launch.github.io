@@ -1,0 +1,96 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Elements"
+    - var title = "Progress bars"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Choose your Size, Style & Color"
+    -var header_small = "PROGRESSBARS, SKILLSBARS, COUNTERS & PIE CHARTS"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Elements
+        li.active Progress Bar
+
+    section.text-center.well.well-sm
+        .container
+            .row
+                .col-lg-10.col-lg-offset-1
+                    h1.text-bold Progress Bars, Skills Bars, Counters
+                    p.lead.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis adipisicing elit. Assumenda deleniti
+    section.well.well-inset
+        .container
+            .col-sm-6.col-md-6.col-lg-5
+                p.font-secondary.big.text-uppercase.text-light-clr photoshop
+                .progress
+                    .progress-bar(role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100")
+                    span.small.text-light-clr
+                p.font-secondary.big.text-uppercase.text-light-clr php
+                .progress
+                    .progress-bar(role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")
+                    span.small.text-light-clr
+                p.font-secondary.big.text-uppercase.text-light-clr marketing
+                .progress
+                    .progress-bar(role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100")
+                    span.small.text-light-clr
+                p.font-secondary.big.text-uppercase.text-light-clr html & css
+                .progress
+                    .progress-bar(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100")
+                    span.small.text-light-clr
+
+            .col-sm-6.col-md-6.col-lg-5.col-lg-offset-1.text-center.text-md-left
+                h5.text-bold Emphasize with different Colors
+
+                p.
+                    Egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. <br><br>
+                                        Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Excepteur sint occaecat cupidatat.
+
+
+    section.bg-dark-var1.text-center
+        .container.counter-panel
+            .row
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="197")
+                    p.text-opacity.font-secondary.text-uppercase CUPS OF COFFEE
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="23")
+                    p.text-opacity.font-secondary.text-uppercase coders
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="98")
+                    p.text-opacity.font-secondary.text-uppercase designers
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="7230")
+                    p.text-opacity.font-secondary.text-uppercase lines
+
+    section.text-center.well
+        .container
+            .row
+                .col-xs-6.col-sm-6.col-md-3.inset-vw
+                    div.progress-bar-custom.progress-bar-radial.progress-bar-secondary-1(data-value="73" data-stroke="5" data-trail="3" data-easing="linear" data-counter="true" data-duration="1000")
+                    p.font-secondary.big.text-uppercase.text-light-clr photoshop
+                .col-xs-6.col-sm-6.col-md-3.inset-vw
+                    div.progress-bar-custom.progress-bar-radial.progress-bar-secondary-1(data-value="11" data-stroke="5" data-trail="3" data-easing="linear" data-counter="true" data-duration="1000")
+                    p.font-secondary.big.text-uppercase.text-light-clr php
+                .col-xs-6.col-sm-6.col-md-3.inset-vw
+                    div.progress-bar-custom.progress-bar-radial.progress-bar-secondary-1(data-value="13" data-stroke="5" data-trail="3" data-easing="linear" data-counter="true" data-duration="1000")
+                    p.font-secondary.big.text-uppercase.text-light-clr html & css
+                .col-xs-6.col-sm-6.col-md-3.inset-vw
+                    div.progress-bar-custom.progress-bar-radial.progress-bar-secondary-1(data-value="59" data-stroke="5" data-trail="3" data-easing="linear" data-counter="true" data-duration="1000")
+                    p.font-secondary.big.text-uppercase.text-light-clr marketing
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

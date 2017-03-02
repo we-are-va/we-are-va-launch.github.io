@@ -1,0 +1,22 @@
+
+-var  rd_navbar_class_ajuster = "top-panel-none-items"
+-var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed', 'data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+
+
+header(class="#{header_class}")
+    include ../navbar/navbar
+    section
+        //Swiper
+        .rd-parallax
+            .rd-parallax-layer(data-speed="0.6" data-type="media" data-url="images/header-6.jpg" )
+
+            .well-parallax.jumbotron.text-center.rd-parallax-layer(data-speed="0.78" data-type="html" data-fade="true")
+                h1
+                    small !{header_small}
+                    |!{header_h1}
+                p.big.
+                    !{header_big}
+                !{header_content}
+
+
+

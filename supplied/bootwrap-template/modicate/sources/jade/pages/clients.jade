@@ -1,0 +1,175 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "Clients"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "About Our Multipurpose Theme"
+    -var header_small = "Clients"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active: a(href="#") Client Page
+
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.section-border
+        .container
+            h1.text-bold Our Clients
+            ul.flex-list.offset-2
+                li: a(href='#'): img(src="images/partner1.png" alt="")
+                li: a(href='#'): img(src="images/partner2.png" alt="")
+                li: a(href='#'): img(src="images/partner3.png" alt="")
+                li: a(href='#'): img(src="images/partner4.png" alt="")
+                li: a(href='#'): img(src="images/partner5.png" alt="")
+                li: a(href='#'): img(src="images/partner6.png" alt="")
+
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.section-border
+        .container
+            h1.text-bold Our Clients
+            .row.flow-offset-2
+                .col-sm-6.col-md-3
+                    article.clients.thumbnail.thumbnail-3
+                        img(src="images/partner1.png" alt="")
+                        .caption
+                            h5 Andrew Jones
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.andrewjones.com
+                .col-sm-6.col-md-3
+                    article.clients.thumbnail.thumbnail-3
+                        img(src="images/partner2.png" alt="")
+                        .caption
+                            h5 Sam Records
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.samrecords.com
+                .col-sm-6.col-md-3
+                    article.clients.thumbnail.thumbnail-3
+                        img(src="images/partner5.png" alt="")
+                        .caption
+                            h5 Samuels
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.samuels.com
+                .col-sm-6.col-md-3
+                    article.clients.thumbnail.thumbnail-3
+                        img(src="images/partner6.png" alt="")
+                        .caption
+                            h5 VintageWorks
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.vintageworks.com
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.text-sm-left.well.well-sm.section-border
+        .container
+            h1.text-bold.text-center Our Clients
+            .row.flow-offset-2
+                article.clients.col-sm-6
+                    .row
+                       .col-sm-4
+                           img(src="images/partner1.png" alt="")
+                       .col-sm-8.inset-xs
+                           h5 Andrew Jones
+                           p.
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                           a(href='#').link.text-primary www.andrewjones.com
+                article.clients.col-sm-6
+                    .row
+                       .col-sm-4
+                           img(src="images/partner2.png" alt="")
+                       .col-sm-8.inset-xs
+                           h5 Samuels
+                           p.
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                           a(href='#').link.text-primary www.samuels.com
+                article.clients.col-sm-6
+                    .row
+                       .col-sm-4
+                           img(src="images/partner5.png" alt="")
+                       .col-sm-8.inset-xs
+                           h5 Samuels
+                           p.
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                           a(href='#').link.text-primary www.samuels.com
+                article.clients.col-sm-6
+                    .row
+                       .col-sm-4
+                           img(src="images/partner6.png" alt="")
+                       .col-sm-8.inset-xs
+                           h5 VintageWorks
+                           p.
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                           a(href='#').link.text-primary www.vintageworks.com
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.text-sm-left.well.well-sm
+        .container
+            h1.text-bold.text-center Our Clients
+            .row
+                article.clients.col-sm-offset-2.col-sm-8
+                    .row
+                        .col-sm-4
+                            img(src="images/partner1.png" alt="")
+                        .col-sm-8.inset-xs
+                            h5 Andrew Jones
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.andrewjones.com
+                article.clients.col-sm-offset-2.col-sm-8.offset-2
+                    .row
+                        .col-sm-4
+                            img(src="images/partner2.png" alt="")
+                        .col-sm-8.inset-xs
+                            h5 Samuels
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.samuels.com
+                article.clients.col-sm-offset-2.col-sm-8.offset-2
+                    .row
+                        .col-sm-4
+                            img(src="images/partner5.png" alt="")
+                        .col-sm-8.inset-xs
+                            h5 Samuels
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.samuels.com
+                article.clients.col-sm-offset-2.col-sm-8.offset-2
+                    .row
+                        .col-sm-4
+                            img(src="images/partner6.png" alt="")
+                        .col-sm-8.inset-xs
+                            h5 VintageWorks
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            a(href='#').link.text-primary www.vintageworks.com
+    //End section
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

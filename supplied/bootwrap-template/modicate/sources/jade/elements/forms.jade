@@ -1,0 +1,96 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Elements"
+    - var title = "Forms"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "With a nice modern and <br class='hidden-md hidden-sm hidden-xs'> intuitive interface"
+    -var header_small = "Forms"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Elements
+        li.active Forms
+
+    section.text-center.well.well-sm
+        .container
+            .row
+                .col-md-12.col-lg-6.col-lg-offset-3
+                    h1.text-bold Forms
+                    p.lead.
+                        Create your contact form in seconds.  With CF you can manage multiple contact forms easly.
+    section.text-center.inset-5.section-border
+        .container
+            h5.text-bold.text-center Login form
+            .row
+                .col-lg-6.col-lg-offset-3
+                    .btn-elements-group-2
+                        a(href='#').btn.btn-info.btn-xs.round-small.btn-icon-left.btn-min-width #[span.icon.fa-facebook] facebook
+                        a(href='#').btn.btn-primary.btn-xs.round-small.btn-icon-left.btn-min-width #[span.icon.fa-twitter] Twitter
+                        a(href='#').btn.btn-danger.btn-xs.round-small.btn-icon-left.btn-min-width #[span.icon.fa-google-plus] Google+
+
+            .row
+                .col-lg-6.col-lg-offset-3
+                    p.small.text-uppercase.text-light-clr.font-secondary.max-width.separate or
+                    form.max-width
+                        div.form-group
+                            label(for="exampleInputEmail").text-uppercase.font-secondary username or E-mail
+                            input(type="email").form-control#exampleInputEmail
+
+                        div.form-group
+                            label(for="exampleInputPassword1").text-uppercase.font-secondary Password
+                            input(type="password").form-control#exampleInputPassword1
+
+
+                        button(type="submit").btn.btn-success.btn-xs.round-xl.btn-block Enter
+    section.well.section-border
+        .container
+            .row
+                .col-sm-8.col-sm-offset-2.inset-sm-min
+                    h5.text-bold.text-center Contact us
+                    form.row.label-insets
+                        div.form-group.col-sm-6
+                            label(for="exampleInputText1").text-uppercase.font-secondary First Name
+                            input(type="text" placeholder="Your First Name").form-control#exampleInputText1
+                        div.form-group.col-sm-6
+                            label(for="exampleInputText2").text-uppercase.font-secondary Last Name
+                            input(type="text" placeholder="Your Last Name").form-control#exampleInputText2
+                        div.form-group.col-sm-12
+                            label(for="exampleTextarea").text-uppercase.font-secondary your message
+                            textarea.form-control#exampleTextarea(rows="3" placeholder="Write your message here")
+                        div.form-group.col-sm-6
+                            label(for="exampleInputEmail2").text-uppercase.font-secondary username or E-mail
+                            input(type="email" placeholder="example@domain.com").form-control#exampleInputEmail2
+
+                        .col-sm-6
+                            button(type="submit").btn.btn-primary.btn-xs.round-xl.btn-block.form-el-offset-1 Send message
+
+    section.well.well-sm.well-inset-3.bg-image.bg-image-1.text-center
+        .container
+            .row
+                .col-md-8.col-md-offset-2
+                    h1.text-bold Subscrible Our Newsletters
+                    p.lead.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus eum exercitationem
+                    form.form-width-1.offset-1
+                        div.form-group
+                            label(for="exampleInputEmail1").text-uppercase.font-secondary
+                            input(type="email" placeholder="Name@domainname.com").width-1.form-control#exampleInputEmail1
+
+                            button(type="submit").btn.btn-primary.btn-xs.round-xl Subscrible
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

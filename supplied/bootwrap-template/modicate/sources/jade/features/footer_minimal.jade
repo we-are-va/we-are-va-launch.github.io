@@ -1,0 +1,27 @@
+//-var footer_class = "page-footer text-center"
+
+- var footer_menu = ["Home", "Pages", "Features","Extras","Elements","Blog", "Gallery", "Shop"]
+
+footer(class="#{footer_class}")
+    section.footer-content
+        .container
+            .navbar-brand.pull-lg-left
+                a(href="index.html") Modicate
+            ul.list-inline-2.pull-lg-right
+                each val in footer_menu
+                    li: a(href="#") #{val}
+
+
+    section.copyright
+        .container
+            p.pull-md-left.
+               &#169; #[span#copyright-year.] All Rights Reserved #[a(href='terms.html') Terms of Use and Privacy Policy]
+
+            ul.list-inline.pull-md-right
+                li: a.fa-facebook(href="#")
+                li: a.fa-pinterest-p(href="#")
+                li: a.fa-twitter(href="#")
+                li: a.fa-google-plus(href="#")
+                li: a.fa-instagram(href="#")
+
+

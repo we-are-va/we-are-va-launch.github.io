@@ -1,0 +1,77 @@
+//-var footer_class = "page-footer text-center"
+
+- var footer_menu = ["Home", "Pages", "Features","Extras","Elements","Blog", "Gallery", "Shop"]
+
+footer(class="#{footer_class}")
+    section.footer-content.text-center.text-sm-left
+        .container
+            .row.flow-offset-1
+                .col-sm-6.col-lg-3
+                    .navbar-brand: a(href='index.html') Modicate
+                    p We believe in Simple, Creative & Flexible Design Standards.
+                    address
+                        p.text-light-clr Headquarters:
+                        |795 Folsom Ave, Suite 600 <br>
+                        |San Francisco, CA 94107
+                    .contact-info
+                        dl
+                            dt Phone
+                            dd: a(href='callto:#') (91) 8547 632521
+                            dt Fax
+                            dd: a(href='callto:#') (91) 11 4752 1433
+                            dt Email
+                            dd: a(href='mailto:#') info@canvas.com
+                .col-sm-6.col-lg-2
+                    h6  BLOGROLL
+                    ul.marked-list.text-primary
+                        li: a(href='#') Documentation
+                        li: a(href='#') Feedback
+                        li: a(href='#') Plugins
+                        li: a(href='#') Support Forums
+                        li: a(href='#') Themes
+                        li: a(href='#') WordPress Blog
+                        li: a(href='#') WordPress Planet
+                .col-sm-6.col-lg-3
+                    h6 RECENT POSTS
+                    article.text-primary
+                        p: a(href='#').text-primary Lorem ipsum dolor sit amet, consectetur
+                        time.text-light-clr(datetime="2015") 10th July 2014
+                    article.text-primary
+                        p: a(href='#').text-primary Elit Assumenda vel amet dolorum quasi
+                        time.text-light-clr(datetime="2015") 10th July 2014
+                    article.text-primary
+                        p: a(href='#').text-primary Debitis nihil placeat, illum est nisi
+                        time.text-light-clr(datetime="2015") 10th July 2014
+                .col-sm-6.col-lg-4
+                    p.count
+                        |15,065,421
+                        span TOTAL DOWNLOADS
+                    p.count
+                        |18,465
+                        span CLIENTS
+
+                    p Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:
+
+                    form
+                        .form-group
+                            label(for="Input2")
+                            input(type="text" placeholder="Enter your e-mail").form-control#Input2
+                        button(type="submit").btn.btn-primary.round-xl.btn-sm.btn-shadow Subscribe
+                    .socials
+                        a(href='#').fa-facebook
+                        a(href='#').fa-rss
+
+
+    section.copyright.text-center
+        .container
+            p.pull-md-left.
+                &#169; #[span#copyright-year.] All Rights Reserved #[a(href='terms.html') Terms of Use and Privacy Policy]
+
+            ul.list-inline.pull-md-right
+                li: a.fa-facebook(href="#")
+                li: a.fa-pinterest-p(href="#")
+                li: a.fa-twitter(href="#")
+                li: a.fa-google-plus(href="#")
+                li: a.fa-instagram(href="#")
+
+

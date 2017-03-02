@@ -1,0 +1,162 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Elements"
+    - var title = "Tables"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "With a nice modern and <br class='hidden-md hidden-sm hidden-xs'> intuitive interface"
+    -var header_small = "Tables"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Elements
+        li.active Tables Style
+
+    section.text-center.well.well-sm
+        .container
+            .row
+                .col-md-12.col-lg-10.col-lg-offset-1
+                    h1.text-bold Tables Style
+                    p.lead.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam
+    section.well.section-border
+        .container
+            //Table
+            table.table.table-border.table-mobile.mobile-primary
+                colgroup
+                    col.col-xs-3
+                    col.col-xs-3
+                    col.col-xs-3
+                    col.col-xs-3
+                thead
+                    tr.bg-primary
+                        th Column 1
+                        th Column 2
+                        th Column 3
+                        th Column 4
+                tbody
+                    tr
+                        td Item #1
+                        td Description
+                        td Subtotal:
+                        td $1.00
+                    tr
+                        td Item #2
+                        td Description
+                        td Discount:
+                        td $2.00
+                    tr
+                        td Item #3
+                        td Description
+                        td Shipping:
+                        td $3.00
+                    tr
+                        td Item #4
+                        td Description
+                        td Tax:
+                        td $4.00
+                    tr.text-bold.text-darker-clr
+                        td All Items
+                        td Description
+                        td Your Total:
+                        td $10.00
+
+    section.well.section-border
+        .container
+            //Table-hover
+            table.table.table-border.table-hover.table-mobile
+                colgroup
+                    col.col-xs-3
+                    col.col-xs-3
+                    col.col-xs-3
+                    col.col-xs-3
+                thead
+                    tr.bg-gray-variant-1
+                        th Column 1
+                        th Column 2
+                        th Column 3
+                        th Column 4
+                tbody
+                    tr
+                        td Item #1
+                        td Description
+                        td Subtotal:
+                        td $1.00
+                    tr
+                        td Item #2
+                        td Description
+                        td Discount:
+                        td $2.00
+                    tr
+                        td Item #3
+                        td Description
+                        td Shipping:
+                        td $3.00
+                    tr
+                        td Item #4
+                        td Description
+                        td Tax:
+                        td $4.00
+                    tr.text-bold.text-darker-clr
+                        td All Items
+                        td Description
+                        td Your Total:
+                        td $10.00
+
+    section.well.well-inset-2
+        .container
+            //Table-striped
+            table.table.table-striped.table-mobile.mobile-primary
+                colgroup
+                    col.col-xs-3
+                    col.col-xs-3
+                    col.col-xs-3
+                    col.col-xs-3
+                thead
+                    tr.bg-primary
+                        th Column 1
+                        th Column 2
+                        th Column 3
+                        th Column 4
+                tbody
+                    tr
+                        td Item #1
+                        td Description
+                        td Subtotal:
+                        td $1.00
+                    tr
+                        td Item #2
+                        td Description
+                        td Discount:
+                        td $2.00
+                    tr
+                        td Item #3
+                        td Description
+                        td Shipping:
+                        td $3.00
+                    tr
+                        td Item #4
+                        td Description
+                        td Tax:
+                        td $4.00
+                    tr.text-bold.text-darker-clr
+                        td All Items
+                        td Description
+                        td Your Total:
+                        td $10.00
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

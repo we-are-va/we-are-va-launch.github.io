@@ -1,0 +1,48 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Extras"
+    - var title = "404"
+    - var header_class = "bg-image bg-image-2"
+
+block head
+
+block header
+    header(class="#{header_class}")
+        -var  rd_navbar_class_ajuster = "top-panel-none-items"
+        -var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed', 'data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+        include ../navbar/navbar
+
+
+
+        = '\n'
+        //Start section
+        section.well-xl.text-center.user-info-section
+            .container
+                h1.text-uppercase.text-white.header-404 404.
+                    small.text-white PAGE NOT FOUND
+                .col-md-6.col-md-offset-3.well
+                    p.text-white.
+                        The page requested couldn't be found - this could be due to a spelling error in the URL or a removed page.
+                    a(href="index.html").btn.btn-default.btn-xs.round-xl.offset-2 Back to homepage
+
+
+        //End section
+
+block content
+
+
+
+
+
+
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

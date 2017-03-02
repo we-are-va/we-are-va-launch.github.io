@@ -1,0 +1,72 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Extras"
+    - var title = "Register page"
+    - var header_class = "bg-image bg-image-2 well-inset-3"
+
+block head
+
+block header
+    header(class="#{header_class}")
+        -var  rd_navbar_class_ajuster = "top-panel-none-items"
+        -var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed', 'data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+        include ../navbar/navbar
+        section.text-center
+            .jumbotron.text-center.offset-large
+                 h1
+                     small Register Page
+                     |Let's Create Something Together!
+
+            ol.breadcrumb
+                li: a(href="index.html") Home
+                li: a(href="#") Extras
+                li.active: a(href="#") Register
+
+        = '\n'
+        //Start section
+        section.well.well-sm
+            .container
+                .row.flow-offset-1
+                    .col-md-6.col-md-offset-3.btn-shadow.inset-sm-min.img-rounded.bg-white
+                        h5.text-center Create an Account
+                        form.row.label-insets
+                            div.form-group.col-sm-6
+                                label(for="exampleInputText1").text-uppercase.font-secondary Name
+                                input(type="text" placeholder="Your Name").round-small.form-control#exampleInputText1
+                            div.form-group.col-sm-6
+                                label(for="exampleInputText2").text-uppercase.font-secondary Username
+                                input(type="text" placeholder="Your Username").round-small.form-control#exampleInputText2
+                            div.form-group.col-sm-12
+                                label(for="exampleInputEmail1").text-uppercase.font-secondary E-mail
+                                input(type="email" placeholder="example@domain.com").round-small.form-control#exampleInputEmail1
+                            div.form-group.col-sm-6
+                                label(for="exampleInputPass1").text-uppercase.font-secondary Password
+                                input(type="password" placeholder="Your password").round-small.form-control#exampleInputPass1
+                            .col-sm-6
+                                button(type="submit").btn.btn-primary.btn-xs.round-small.btn-block.form-el-offset-1 Create account
+                            .col-xs-12.text-center
+                                p.small.text-uppercase.text-light-clr.font-secondary.max-width.separate or
+                                .btn-elements-group-2
+                                    a(href='#').btn.btn-info.btn-xs.round-small.btn-icon-left.btn-min-width #[span.icon.fa-facebook] facebook
+                                    a(href='#').btn.btn-primary.btn-xs.round-small.btn-icon-left.btn-min-width #[span.icon.fa-twitter] Twitter
+                                    a(href='#').btn.btn-danger.btn-xs.round-small.btn-icon-left.btn-min-width #[span.icon.fa-google-plus] Google+
+        //End section
+
+block content
+
+
+
+
+
+
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

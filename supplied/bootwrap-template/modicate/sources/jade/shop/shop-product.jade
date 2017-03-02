@@ -1,0 +1,253 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Shop"
+    - var title = "Single product"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Smart title about shopping"
+    -var header_small = "Shop"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb
+                    li: a(href="index.html") Home
+                    li: a(href="#") Shop
+                    li.active: a(href="#") Single product
+
+
+    = '\n'
+    //Start section
+    section.well.well-sm.section-border.single-product
+        .container
+            .row.product
+                .col-md-7.text-center
+
+                    .slider
+                       .swiper-container.gallery-top(data-lightbox="gallery")
+                            .swiper-wrapper
+                                .swiper-slide.rem_class
+                                    .swiper-slide-caption
+                                        a(href="images/shop-18_original.jpg" data-lightbox="image")
+                                            img(src="images/shop-18.jpg" alt="")
+                                .swiper-slide
+                                    .swiper-slide-caption
+                                        a(href="images/shop-16_original.jpg" data-lightbox="image")
+                                            img.img_zoom(src="images/shop-16.jpg" alt="")
+
+                                .swiper-slide.first
+                                    .swiper-slide-caption
+                                        a(href="images/shop-13_original.jpg" data-lightbox="image")
+                                            img.img_zoom(src="images/shop-13.jpg" alt="")
+                                .swiper-slide
+                                    .swiper-slide-caption
+                                        a(href="images/shop-17_original.jpg" data-lightbox="image")
+                                            img.img_zoom(src="images/shop-17.jpg" alt="")
+                                .swiper-slide
+                                    .swiper-slide-caption
+                                        a(href="images/shop-19_original.jpg" data-lightbox="image")
+                                            img.img_zoom(src="images/shop-19.jpg" alt="")
+
+                        .swiper-container.gallery-thumbs
+                            .swiper-wrapper
+                                .swiper-slide.rem_class
+                                    .swiper-slide-caption
+                                        img(src="images/shop-18.jpg" alt="")
+
+                                .swiper-slide
+                                    .swiper-slide-caption
+                                        img(src="images/shop-16.jpg" alt="")
+
+                                .swiper-slide.first-el
+                                    .swiper-slide-caption
+                                        img(src="images/shop-13.jpg" alt="")
+                                .swiper-slide
+                                    .swiper-slide-caption
+                                        img(src="images/shop-17.jpg" alt="")
+                                .swiper-slide
+                                    .swiper-slide-caption
+                                        img(src="images/shop-19.jpg" alt="")
+
+
+                .col-md-5.text-center.text-md-left
+                    h1.text-bold.h1-variant-2 Replay Women's Vicki Straight Jeans, Blue
+                    a.rating(href='#')
+                        span.fa-star
+                        span.fa-star
+                        span.fa-star
+                        span.fa-star
+                        span.fa-star-o
+                    a(href='#').text-light-clr 1 customer review
+
+                    p.big.offset-6.line-height-2.
+                        Short sleeve t-shirts in black, crewneck collar. Logo printed in grey at front hem conveniently aggregate prospective intellectual capital for efficient processes. Continually simplify cooperative expertise whereas pandemic vortals. Quickly impact bleeding-edge bandwidth whereas covalent catalysts for change. Tonal stitching. 98% cotton, 2% elastane. Made in Italy.
+
+                    .caption
+                        span.text-uppercase.text-light-clr.small quantity
+                        span.quantity.round-xl
+                            span.fa-angle-left
+                            span.num.text-dark-variant-3 1
+                            span.fa-angle-right
+                        span.price: del $24.99
+                        span.price.sale $12.49
+
+                        a(href='#').btn.btn-success.round-xl.btn-sm.btn-block.offset-6 Add to cart
+
+                        dl.info-list.offset-5
+                            dt SKU
+                            dd 036895
+                            dt Categories
+                            dd Clothing, Man's
+                            dt Tags
+                            dd Black, Cotton
+                        .share.offset-6
+                            span.small.font-secondary.text-uppercase.text-light-clr Share this
+                            ul.list-inline.list-inline-4.pull-md-right
+                                li: a.fa-facebook(href="#").text-info
+                                li: a.fa-pinterest-p(href="#").text-danger
+                                li: a.fa-twitter(href="#").text-primary
+                                li: a.fa-google-plus(href="#").text-danger
+                                li: a.fa-instagram(href="#").text-info
+                                li: a.fa-rss(href="#")
+                                li: a.fa-envelope(href="#").text-info
+
+                .col-xs-12.offset-3
+                    //Tabs
+                    ul.nav.nav-tabs.text-center.product#myTabs(role="tablist")
+                        li.active.round-large.text-dark-variant-3(role="presentation"): a.round-large(href="#tab0" aria-controls="tab0" role="tab" ) Description
+                        li.round-large.text-dark-variant-3(role="presentation"): a.round-large(href="#tab1" aria-controls="tab1" role="tab" ) Additional information
+                        li.round-large.text-dark-variant-3(role="presentation"): a.round-large(href="#tab2" aria-controls="tab2" role="tab" ) Reviews #[span.text-light-clr (2)]
+
+
+
+                    //Tab panes
+                    div.tab-content.text-sm-left
+                        .tab-pane.active.fade.in(role="tabpanel")#tab0
+                            p.lead.text-base.
+                                Short sleeve t-shirts in black, crewneck collar. Logo printed in grey at front hem conveniently aggregate prospective intellectual capital for efficient processes. Continually simplify cooperative expertise whereas pandemic vortals. Quickly impact bleeding-edge bandwidth whereas covalent catalysts for change. Tonal stitching. 98% cotton, 2% elastane. Made in Italy.
+
+                        .tab-pane.fade(role="tabpanel")#tab1
+                            //Table-striped
+                            table.table.table-striped-odd.table-mobile.mobile-primary
+                                colgroup
+                                    col.col-xs-4
+                                    col.col-xs-8
+                                tbody
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Size
+                                        td.boder-none Small, Medium & Large
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Color
+                                        td.boder-none Pink & White
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Waist
+                                        td.boder-none 26 cm
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Length
+                                        td.boder-none 40 cm
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Chest
+                                        td.boder-none 33 inches
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Fabric
+                                        td.boder-none Cotton, Silk & Synthetic
+                                    tr.count-off
+                                        td.boder-none.small.font-secondary.text-uppercase.letter-spacing-1.text-light-clr Warranty
+                                        td.boder-none 3 Months
+
+
+                        .tab-pane.fade(role="tabpanel")#tab2.comments.text-right
+                            blockquote.box-sm
+                                .box__left.text-center
+                                    img(src="images/blog-26.jpg" alt="").img-circle
+                                .box__body.box__middle.btn-shadow.round-small.comments-rating
+                                    h6 John Doe
+                                    time(datetime="2015").meta April 24, 2012 at 10:46 am
+                                    a.rating(href='#').pull-right
+                                        span.fa-star
+                                        span.fa-star
+                                        span.fa-star
+                                        span.fa-star
+                                        span.fa-star-o
+                                    p.big.text-light-clr.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet, eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium
+
+                            blockquote.box-sm.offset-5
+                                .box__left.text-center
+                                    img(src="images/blog-26.jpg" alt="").img-circle
+                                .box__body.box__middle.btn-shadow.round-small.comments-rating
+                                    h6 Mary Jane
+                                    time(datetime="2015").meta June 16, 2014 at 6:00PM
+                                    a.rating(href='#').pull-right
+                                        span.fa-star
+                                        span.fa-star
+                                        span.fa-star
+                                        span.fa-star
+                                        span.fa-star-o
+                                    p.big.text-light-clr.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet, eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium
+
+                            a(href='#').btn.btn-primary.round-xl.btn-sm.offset-5 Add a review
+
+
+    //End section
+
+
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm
+        .container
+            h4.text-dark-variant-4 Related Products
+            .row.flow-offset-1.offset-5
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-1.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-2.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-3.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-4.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

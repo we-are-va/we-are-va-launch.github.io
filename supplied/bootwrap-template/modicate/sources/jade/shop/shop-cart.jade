@@ -1,0 +1,123 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Shop"
+    - var title = "Shopping cart"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Your Shopping Cart"
+    -var header_small = "Shop"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb
+                    li: a(href="index.html") Home
+                    li: a(href="#") Shop
+                    li.active: a(href="#") Shopping cart
+
+
+    = '\n'
+    //Start section
+    section.well.well-sm.section-border.shop-cart
+        .container
+            .row
+                .col-xs-12.table-responsive
+                    table.table.order.text-center.text-md-left
+                        colgroup
+                            col.col-xs-1
+                            col.col-xs-1
+                            col.col-xs-3.col-sm-5
+                            col.col-xs-1
+                            col.col-xs-1.col-sm-2
+                            col.col-xs-1.col-sm-2
+                        thead
+                            tr.bg-lighter.text-uppercase.text-darker-clr.font-secondary.section-border
+                                th
+                                th
+                                th Product
+                                th Price
+                                th Quantity
+                                th Total
+                        tbody
+                            tr.section-border
+                                td.text-center
+                                    a(href='#').fa-trash-o.h5.text-light-clr
+                                td.text-center
+                                    a(href='shop-product.html')
+                                        img(src="images/shop-14.jpg" alt="")
+                                td.text-left
+                                    h6.text-dark-variant-4
+                                        a(href='shop-product.html') Black Leather & Jersey Hoodie White #[br.hidden-sm.hidden-xs] Double Zip Hoodie
+                                td
+                                    span.price $12.49
+                                td
+                                    span.quantity.round-xl
+                                        span.fa-angle-left
+                                        span.num.text-dark-variant-3 1
+                                        span.fa-angle-right
+                                td
+                                    span.price $12.49
+                            tr.section-border
+                                td.text-center
+                                    a(href='#').fa-trash-o.h5.text-light-clr
+                                td.text-center
+                                    a(href='shop-product.html')
+                                        img(src="images/shop-15.jpg" alt="")
+                                td.text-left
+                                    h6.text-dark-variant-4
+                                        a(href='shop-product.html') ESPRIT Men's Long Sleeve Jacket
+                                td
+                                    span.price $12.49
+                                td
+                                    span.quantity.round-xl
+                                        span.fa-angle-left
+                                        span.num.text-dark-variant-3 1
+                                        span.fa-angle-right
+                                td
+                                    span.price $12.49
+
+                .col-xs-6.text-center.text-sm-left
+                    form
+                        div.form-group
+                            label(for="exampleInputText1").text-uppercase.font-secondary
+                            input(type="text" placeholder="Coupon Code").form-control.round-small#exampleInputText1
+                            button(type="submit").btn.btn-default.btn-xs.round-small.text-dark-variant-3 Apply Coupon
+                .col-xs-6.text-center.text-sm-right
+                    a(href='#').btn.btn-default.btn-xs.round-small.text-dark-variant-3 Update cart
+
+                .col-xs-12.offset-5
+                    p.text-uppercase.text-darker-clr.font-secondary.letter-spacing-1 Cart Totals
+
+                    table.table.cart-total
+                        colgroup
+                            col.col-xs-6
+                            col.col-xs-6
+
+                        thead
+                            tr.font-secondary.text-base.section-border
+                                th.bg-lighter Subtotal
+                                th.bg-lighter.text-right: span.price $24,98
+                            tr.font-secondary.text-base
+                                th.bg-lighter Total
+                                th.bg-lighter.total.text-right: span.price $24,98
+                    .text-center.text-sm-right
+                        a(href='#').btn.btn-primary.btn-xs.round-small Proceed to checkout
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

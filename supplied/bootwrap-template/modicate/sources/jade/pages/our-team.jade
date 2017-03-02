@@ -1,0 +1,275 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "Our Team"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Meet our People"
+    -var header_small = "our team"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active Our Team
+
+    = '\n'
+    //Start section 4 Columns
+    section.text-center.well.well-sm
+        .container
+            h5.text-bold.text-md-left 4 Columns
+            hr
+            .row.flow-offset-2
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img1.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Jennifer Rogers
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img2.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Kathryn Holmes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img3.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Gregory Hayes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img4.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Richard Patterson
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+    //End section
+
+    = '\n'
+    //Start section 3 Columns
+    section.text-center.well.well-sm
+        .container
+            h5.text-bold.text-md-left 3 Columns
+            hr
+            .row.flow-offset-2
+                .col-sm-12.col-md-4
+                    .thumbnail.thumbnail-4
+                        img(src="images/team_img5.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Jennifer Rogers
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-sm-12.col-md-4
+                    .thumbnail.thumbnail-4
+                        img(src="images/team_img6.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Kathryn Holmes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-sm-12.col-md-4
+                    .thumbnail.thumbnail-4
+                        img(src="images/team_img7.png" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Gregory Hayes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+    //End section
+
+    = '\n'
+    //Start section 4 Columns with text
+    section.text-center.well.well-sm
+        .container
+            h5.text-bold.text-md-left 4 Columns with text
+            hr
+            .row.flow-offset-2
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img8.png" alt="").img-circle
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Jennifer Rogers
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia quidem quisquam ratione
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img9.png" alt="").img-circle
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Kathryn Holmes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia quidem quisquam ratione
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img10.png" alt="").img-circle
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Gregory Hayes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia quidem quisquam ratione
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/team_img11.png" alt="").img-circle
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Richard Patterson
+                            p.small.text-light-clr.text-uppercase web-designer
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia quidem quisquam ratione
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+    //End section
+
+    = '\n'
+    //Start section List Layout
+    section.text-center.text-sm-left.well.well-sm
+        .container
+            h5.text-bold.text-md-left List Layout
+            hr
+            .row.flow-offset-2
+                .col-sm-12.col-md-6
+                    article.row
+                        .col-xs-12.col-sm-6
+                            .thumbnail
+                                img(src="images/team_img12.png" alt="").img-rounded
+                        .col-xs-12.col-sm-6
+                            .thumbnail
+                                .caption
+                                    h6: a(href='team-member.html') Jennifer Rogers
+                                    p.small.text-light-clr.text-uppercase web-designer
+                                    p.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                    +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+                .col-sm-12.col-md-6
+                    article.row
+                        .col-xs-12.col-sm-6
+                            .thumbnail
+                                img(src="images/team_img13.png" alt="").img-rounded
+                        .col-xs-12.col-sm-6
+                           .thumbnail
+                                .caption
+                                    h6: a(href='team-member.html') Gregory Hayes
+                                    p.small.text-light-clr.text-uppercase web-designer
+                                    p.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                    +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+    //End section
+
+    = '\n'
+    //Start section List Layout - Carousel
+    section.text-center.text-sm-left.well.well-sm
+        .container
+            h5.text-bold.text-md-left List Layout - Carousel
+            hr
+            .row.flow-offset-2
+                //Owl Carousel
+                .owl-carousel(data-items='1' data-sm-items='1' data-md-items='2' data-dots="true" data-margin="30")
+                    .owl-item
+                        article
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    img(src="images/team_img12.png" alt="").img-rounded
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    .caption
+                                        h6: a(href='team-member.html') Jennifer Rogers
+                                        p.small.text-light-clr.text-uppercase web-designer
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                        +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+
+                    .owl-item
+                        article
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    img(src="images/team_img13.png" alt="").img-rounded
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    .caption
+                                        h6: a(href='team-member.html') Gregory Hayes
+                                        p.small.text-light-clr.text-uppercase web-designer
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                        +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+
+                    .owl-item
+                        article
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    img(src="images/team_img12.png" alt="").img-rounded
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    .caption
+                                        h6: a(href='team-member.html') Jennifer Rogers
+                                        p.small.text-light-clr.text-uppercase web-designer
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                        +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+
+                    .owl-item
+                        article
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    img(src="images/team_img13.png" alt="").img-rounded
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    .caption
+                                        h6: a(href='team-member.html') Gregory Hayes
+                                        p.small.text-light-clr.text-uppercase web-designer
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                        +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+
+                    .owl-item
+                        article
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    img(src="images/team_img12.png" alt="").img-rounded
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    .caption
+                                        h6: a(href='team-member.html') Jennifer Rogers
+                                        p.small.text-light-clr.text-uppercase web-designer
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                        +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+
+                    .owl-item
+                        article
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    img(src="images/team_img13.png" alt="").img-rounded
+                            .col-xs-12.col-sm-6
+                                .thumbnail
+                                    .caption
+                                        h6: a(href='team-member.html') Gregory Hayes
+                                        p.small.text-light-clr.text-uppercase web-designer
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam officia
+                                        +lists('ul','list-inline list-inline-3',['fa-facebook-square', 'fa-twitter-square', 'fa-google-plus-square'],['', '', ''])
+
+    //End section
+
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

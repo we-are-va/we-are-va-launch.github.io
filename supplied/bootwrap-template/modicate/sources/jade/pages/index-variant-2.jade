@@ -1,0 +1,263 @@
+extends ../layouts/default
+
+block vars
+  - var active = "Pages"
+  - var title = "Home Variant 2"
+  - var header_class = "bg-image bg-image-2"
+
+block head
+
+block header
+  header(class="#{header_class}")
+    -var  rd_navbar_class_ajuster = "top-panel-none-items"
+    -var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed', 'data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+    include ../navbar/navbar
+    = '\n'
+    //Start section
+    section.well-xl.well-xl-variant-1.text-center
+      .container
+        h1.text-uppercase.text-white Next update
+        .col-md-8.col-md-offset-2.well-sm-variant-1
+          #DateCountdown(data-date="2016-06-20 00:00:00").text-white
+
+        form.form-width-2.offset-1.text-white
+          div.form-group
+            label(for="exampleInputEmail1").text-uppercase.font-secondary
+            input(type="email" placeholder="Name@domainname.com").width-2.text-white.form-control.bg-rgba#exampleInputEmail1
+
+            button(type="submit").btn.btn-primary.btn-xs.round-xl be the 1st to notify
+
+    //End section
+
+block content
+  = '\n'
+  //Start section
+  section.well.well-sm.bg-lighter.relative.text-center
+    .container
+      .row
+        .col-lg-6.col-lg-offset-3
+          h1.text-bold Some Features
+          p.lead.
+            We worked out an amazing combination of vast functionality
+            and user's comfort. It will totally impress you with its power!
+      .row.offset-1.text-md-left.flow-offset-1
+        .col-sm-6.col-md-3
+          span.icon.icon-lg.icon-primary.fa-heartbeat
+          h5 Code optimisation
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+        .col-sm-6.col-md-3
+          span.icon.icon-lg.icon-primary.fa-compass
+          h5 Long-term support
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+        .col-sm-6.col-md-3
+          span.icon.icon-lg.icon-primary.fa-edit
+          h5 New design skins
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+        .col-sm-6.col-md-3
+          span.icon.icon-lg.icon-primary.fa-comments-o
+          h5 New socials feeds
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim!
+  //End section
+
+  = '\n'
+  //Start section
+  section.well.section-border
+    .container
+      .row
+        .col-sm-8.col-sm-offset-2.inset-sm-min
+          h5.text-bold.text-center Booking form
+          form.row.label-insets.rd-mailform(method="post" action="bat/rd-mailform.php")
+            //RD Mailform Type
+            input(type="hidden" name="form-type" value="contact")
+            //END RD Mailform Type
+            div.form-group.col-sm-6
+              label(for="exampleInputText1").text-uppercase.font-secondary.form-label Your Name
+              input(type="text" placeholder="Your Name" name="name" data-constraints="@NotEmpty @LettersOnly").form-control#exampleInputText1
+            div.form-group.col-sm-6
+              label(for="exampleInputEmail2").text-uppercase.font-secondary Your E-mail
+              input(placeholder="E-mail" type="text"
+              name="email" data-constraints="@NotEmpty @Email").form-control#exampleInputEmail2
+            div.form-group.col-sm-12
+              label(for="exampleTextarea").text-uppercase.font-secondary your message
+              textarea.form-control#exampleTextarea(rows="3" placeholder="Write your message here" name="message" data-constraints="@NotEmpty")
+            div.form-group.col-sm-6
+              // RD DatePicker
+              p.data-label Date
+              label.form-label.date.form-label-date(data-add-placeholder='', for='mailform-input-date') Date
+              input.form-control#mailform-input-date(type='date', name='date', data-constraints='@Date')
+            .col-sm-6
+              button(type="submit").btn.btn-primary.btn-xs.round-xl.btn-block.form-el-offset-1 Book Now
+              div.mfInfo
+  = '\n'
+  //Start section
+  section.well.well-sm.text-center.text-md-left.section-border.bg-lighter
+    .container
+      h1.text-bold.text-center Twitterfeed
+      .twitter.isotope.row(data-isotope-layout="masonry", data-twitter-username='templatemonster', data-twitter-date-format='%d.%m.%y')
+        .col-xs-12.col-sm-6.col-lg-4
+          a.twitter__item(data-twitter-type='tweet', href='#')
+            .box.twitter__box
+              .twitter__item__avatar.box__left
+                img(data-avatar='src', src='images/_blank.png', alt='')
+              .box__body.box__middle
+                .twitter__item__meta
+                  h6(data-user_name='text')  
+                  div(data-screen_name='text')
+                  time.pull-right(data-date='text', data-datetime='datetime', datetime='2016-08-09')
+            .twitter__item__img-wrap
+              img.twitter__item__media(data-media_url='src', src='images/_blank.png', alt='')
+            .twitter__item__tweet-wrap
+              p.twitter__item__tweet(data-tweet='text')
+        .col-xs-12.col-sm-6.col-lg-4
+          a.twitter__item(data-twitter-type='tweet', href='#')
+            .box.twitter__box
+              .twitter__item__avatar.box__left
+                img(data-avatar='src', src='images/_blank.png', alt='')
+              .box__body.box__middle
+                .twitter__item__meta
+                  h6(data-user_name='text')  
+                  div(data-screen_name='text')
+                  time.pull-right(data-date='text', data-datetime='datetime', datetime='2016-08-09')
+            .twitter__item__img-wrap
+              img.twitter__item__media(data-media_url='src', src='images/_blank.png', alt='')
+            .twitter__item__tweet-wrap
+              p.twitter__item__tweet(data-tweet='text')
+
+        .col-xs-12.col-sm-6.col-lg-4
+          a.twitter__item(data-twitter-type='tweet', href='#')
+            .box.twitter__box
+              .twitter__item__avatar.box__left
+                img(data-avatar='src', src='images/_blank.png', alt='')
+              .box__body.box__middle
+                .twitter__item__meta
+                  h6(data-user_name='text')  
+                  div(data-screen_name='text')
+                  time.pull-right(data-date='text', data-datetime='datetime', datetime='2016-08-09')
+            .twitter__item__img-wrap
+              img.twitter__item__media(data-media_url='src', src='images/_blank.png', alt='')
+            .twitter__item__tweet-wrap
+              p.twitter__item__tweet(data-tweet='text')
+        .col-xs-12.col-sm-6.col-lg-4
+          a.twitter__item(data-twitter-type='tweet', href='#')
+            .box.twitter__box
+              .twitter__item__avatar.box__left
+                img(data-avatar='src', src='images/_blank.png', alt='')
+              .box__body.box__middle
+                .twitter__item__meta
+                  h6(data-user_name='text')  
+                  div(data-screen_name='text')
+                  time.pull-right(data-date='text', data-datetime='datetime', datetime='2016-08-09')
+            .twitter__item__img-wrap
+              img.twitter__item__media(data-media_url='src', src='images/_blank.png', alt='')
+            .twitter__item__tweet-wrap
+              p.twitter__item__tweet(data-tweet='text')
+
+        .col-xs-12.col-sm-6.col-lg-4
+          a.twitter__item(data-twitter-type='tweet', href='#')
+            .box.twitter__box
+              .twitter__item__avatar.box__left
+                img(data-avatar='src', src='images/_blank.png', alt='')
+              .box__body.box__middle
+                .twitter__item__meta
+                  h6(data-user_name='text')  
+                  div(data-screen_name='text')
+                  time.pull-right(data-date='text', data-datetime='datetime', datetime='2016-08-09')
+            .twitter__item__img-wrap
+              img.twitter__item__media(data-media_url='src', src='images/_blank.png', alt='')
+            .twitter__item__tweet-wrap
+              p.twitter__item__tweet(data-tweet='text')
+        .col-xs-12.col-sm-6.col-lg-4
+          a.twitter__item(data-twitter-type='tweet', href='#')
+            .box.twitter__box
+              .twitter__item__avatar.box__left
+                img(data-avatar='src', src='images/_blank.png', alt='')
+              .box__body.box__middle
+                .twitter__item__meta
+                  h6(data-user_name='text')  
+                  div(data-screen_name='text')
+                  time.pull-right(data-date='text', data-datetime='datetime', datetime='2016-08-09')
+            .twitter__item__img-wrap
+              img.twitter__item__media(data-media_url='src', src='images/_blank.png', alt='')
+            .twitter__item__tweet-wrap
+              p.twitter__item__tweet(data-tweet='text')
+
+      //End section
+    = '\n'
+  //Start section
+  section.well.well-sm.text-center.text-md-left
+    .container.text-center
+      .row
+        h1.text-bold Instafeed
+        aside.col-xs-12
+          .content-wrap
+            .instafeed(data-instafeed-clientid='44f19408f04040bd85214315861a84a1', data-instafeed-showlog='true', data-instafeed-get='profile', data-instafeed-user='499522078')
+              .instagram-profile.box-md
+                .box__left
+                  img(src='images/_blank.png', alt='', data-profile_picture='src')
+                .box__body.box__middle.text-center.text-md-left
+                  h3.decoration-element.decoration-element-variant-1(data-username='text')
+                  a.btn.btn-primary.btn-xs.round-small.btn-icon-left(href='#', data-link='href')
+                    span.icon.fa-plus
+                    | Follow
+                  p(data-bio='text')
+                  p.instagram-profile-link
+                    a(href='#', data-website='href,text')
+
+                  ul.instagram-profile-meta
+                    li
+                      dl
+                        dt
+                          span.number(data-counts-media='text')
+                        dd Posts
+                    li
+                      dl
+                        dt
+                          span.number(data-counts-followed_by='text')
+                        dd Followers
+                    li
+                      dl
+                        dt
+                          span.number(data-counts-follows='text')
+                        dd Following
+        .col-xs-12
+          .instafeed(data-instafeed-clientid='44f19408f04040bd85214315861a84a1', data-instafeed-get='user', data-instafeed-sort='most-liked', data-instafeed-user='499522078', data-instafeed-showlog='true', data-lightbox='gallery')
+            .row.flow-offset-1
+              .col-xs-12.col-sm-6.col-md-4
+                div(data-instafeed-item='')
+                  a.thumb(data-images-standard_resolution-url='href', data-lightbox='image')
+                    img(src='images/_blank.png', alt='', data-images-standard_resolution-url='src')
+                    span.thumb-overlay
+              .col-xs-12.col-sm-6.col-md-4
+                div(data-instafeed-item='')
+                  a.thumb(data-images-standard_resolution-url='href', data-lightbox='image')
+                    img(src='images/_blank.png', alt='', data-images-standard_resolution-url='src')
+                    span.thumb-overlay
+              .col-xs-12.col-sm-6.col-md-4
+                div(data-instafeed-item='')
+                  a.thumb(data-images-standard_resolution-url='href', data-lightbox='image')
+                    img(src='images/_blank.png', alt='', data-images-standard_resolution-url='src')
+                    span.thumb-overlay
+              .col-xs-12.col-sm-6.col-md-4
+                div(data-instafeed-item='')
+                  a.thumb(data-images-standard_resolution-url='href', data-lightbox='image')
+                    img(src='images/_blank.png', alt='', data-images-standard_resolution-url='src')
+                    span.thumb-overlay
+              .col-xs-12.col-sm-6.col-md-4
+                div(data-instafeed-item='')
+                  a.thumb(data-images-standard_resolution-url='href', data-lightbox='image')
+                    img(src='images/_blank.png', alt='', data-images-standard_resolution-url='src')
+                    span.thumb-overlay
+              .col-xs-12.col-sm-6.col-md-4
+                div(data-instafeed-item='')
+                  a.thumb(data-images-standard_resolution-url='href', data-lightbox='image')
+                    img(src='images/_blank.png', alt='', data-images-standard_resolution-url='src')
+                    span.thumb-overlay
+s  //End section
+
+block footer
+  -var footer_class = "page-footer footer-centered text-center"
+  include ../features/footer_centered

@@ -1,0 +1,186 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Blog"
+    - var title = "TimeLine"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Our Latest News"
+    -var header_small = "Blog"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb
+                    li: a(href="index.html") Home
+                    li: a(href="#") Blog
+                    li.active: a(href="#") Timeline
+
+    = '\n'
+    //Start section
+    section.text-center.text-md-left.offset-1.timeline
+        .container
+            .row
+                .col-xs-12.text-left.text-md-center
+                    time(datetime='2016').h5.meta-timeline NOVEMBER 2014
+                .col-xs-11.col-md-5.col-md-offset-0
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-11.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-13.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+
+                .col-xs-11.col-md-5.col-md-offset-2.inset-1.timeline-right
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-12.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-14.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+
+                .col-xs-12.text-left.text-md-center
+                    time(datetime='2016').h5.meta-timeline OCTOBER 2014
+
+                .col-xs-11.col-md-5.col-md-offset-0
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-15.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-17.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+                .col-xs-11.col-md-5.col-md-offset-2.inset-1.timeline-right
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-16.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+
+                    article.thumbnail.well.view-animate.slow-hover
+                        .image-slow-wrapper: img(src="images/blog-18.jpg" alt="")
+                        .caption.max-width
+                            h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                            p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                            .blog-info
+                                .pull-md-left
+                                    time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                    a(href='#').badge.fa-comments.font-secondary 13
+                                a(href="blog_post.html").btn-link Read More
+                .col-xs-12.timeline-hidden
+                    .row
+                        .col-xs-12.text-left.text-md-center
+                            time(datetime='2016').h5.meta-timeline SEPTEMBER 2014
+                        .col-xs-11.col-md-5.col-md-offset-0
+                            article.thumbnail.well.view-animate.slow-hover
+                                .image-slow-wrapper: img(src="images/blog-11.jpg" alt="")
+                                .caption.max-width
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+                            article.thumbnail.well.view-animate.slow-hover
+                                .image-slow-wrapper: img(src="images/blog-13.jpg" alt="")
+                                .caption.max-width
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+
+                        .col-xs-11.col-md-5.col-md-offset-2.inset-1.timeline-right
+                            article.thumbnail.well.view-animate.slow-hover
+                                .image-slow-wrapper: img(src="images/blog-12.jpg" alt="")
+                                .caption.max-width
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+
+                            article.thumbnail.well.view-animate.slow-hover
+                                .image-slow-wrapper: img(src="images/blog-14.jpg" alt="")
+                                .caption.max-width
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+
+                .col-xs-12.text-left.text-md-center.offset-4
+                    span.btn.btn-primary.round-xl.timeline-btn #[span load more] #[span hide]
+
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

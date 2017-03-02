@@ -1,0 +1,235 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "Pricing"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "In All Kind of Colors & Sizes"
+    -var header_small = "Pricing tables"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active: a(href="#") Pricing
+
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.section-border
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3.bg-white
+                    h1.text-bold Choose Your Plan
+                    p.lead.
+                        We worked out an amazing combination of vast functionality
+                        and user's comfort. It will totally impress you with its power!
+            .row.offset-1.flow-offset-2.pricing-border-left
+                .col-sm-6.col-lg-3.pricing-box.pricing-box-hover.bg-white
+                    .thumbnail.thumbnail-3
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        span.icon.icon-xl.icon-light.fa-hand-pointer-o
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 free
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non consectetur lorem.
+                            a(href='#').btn.btn-variant-1.btn-default.btn-sm.round-xl Start for free
+
+                .col-sm-6.col-lg-3.pricing-box.pricing-box-hover.bg-white
+                    .thumbnail.thumbnail-3
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 Freelancer
+                        span.icon.icon-xl.icon-light.fa-hand-peace-o
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 $20
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non consectetur lorem.
+                            a(href='#').btn.btn-variant-1.btn-default.btn-sm.round-xl Start for free
+
+                .col-sm-6.col-lg-3.pricing-box.pricing-box-hover.bg-white
+                    .thumbnail.thumbnail-3
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 SpiderMan
+                        span.icon.icon-xl.icon-light.fa-hand-spock-o
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 $50
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non consectetur lorem.
+                            a(href='#').btn.btn-variant-1.btn-default.btn-sm.round-xl Start for free
+
+                .col-sm-6.col-lg-3.pricing-box.pricing-box-hover.bg-white
+                    .thumbnail.thumbnail-3
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 ironMan
+                        span.icon.icon-xl.icon-light.fa-hand-stop-o
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 $100
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non consectetur lorem.
+                            a(href='#').btn.btn-variant-1.btn-default.btn-sm.round-xl Start for free
+    //End section
+
+    //Start section
+    section.text-center.text-sm-left.well.well-sm.section-border
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3.bg-white.text-center
+                    h1.text-bold Choose Your Plan
+                    p.lead.
+                        We worked out an amazing combination of vast functionality
+                        and user's comfort. It will totally impress you with its power!
+            .row.offset-1.flow-offset-2
+                .col-sm-6.col-lg-5
+                    .thumbnail.thumbnail-6.pricing-box
+                        span.icon.icon-xl.fa-battery-half.text-primary
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        .caption
+                            h1.h1__before.text-uppercase.text-bold.letter-spacing-1 20
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non consectetur lorem.
+
+                            .row.inset-1.flow-offset-2
+                                .col-md-6
+                                    ul.marked-list.marked-list-2
+                                        li Highly Customizable
+                                        li Pre-Built Pages
+                                        li Clean Design
+                                .col-md-6
+                                    ul.marked-list.marked-list-3
+                                        li Extensive Options
+                                        li Top Notch Quality
+                                        li Responsive Design
+                .col-sm-6.col-lg-5.col-lg-offset-2
+                    .thumbnail.thumbnail-6.pricing-box
+                        span.icon.icon-xl.fa-battery-4.text-success
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 Full business
+                        .caption
+                            h1.h1__before.text-uppercase.text-bold.letter-spacing-1 59
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non consectetur lorem.
+
+                            .row.inset-1.flow-offset-2
+                                .col-md-6
+                                    ul.marked-list.marked-list-2
+                                        li Highly Customizable
+                                        li Pre-Built Pages
+                                        li Clean Design
+                                .col-md-6
+                                    ul.marked-list.marked-list-3
+                                        li Extensive Options
+                                        li Top Notch Quality
+                                        li Responsive Design
+    //End section
+
+
+    //Start section
+    section.text-center.well.well-sm.section-border
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3.bg-white.text-center
+                    h1.text-bold Choose Your Plan
+                    p.lead.
+                        We worked out an amazing combination of vast functionality
+                        and user's comfort. It will totally impress you with its power!
+            .row.offset-1.flow-offset-2
+                .col-sm-12.col-md-4
+                    .thumbnail.thumbnail-4.pricing-box.pricing-box-2
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 $20
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst.
+                            a(href='#').btn.btn-variant-1.btn-primary.btn-default.btn-sm.round-xl Let's do it
+                .col-sm-12.col-md-4
+                    .thumbnail.thumbnail-4.pricing-box.pricing-box-2
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 $50
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst.
+                            a(href='#').btn.btn-variant-1.btn-primary.btn-default.btn-sm.round-xl Let's do it
+                .col-sm-12.col-md-4
+                    .thumbnail.thumbnail-4.pricing-box.pricing-box-2
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        .caption
+                            h2.text-uppercase.text-bold.letter-spacing-1 $20
+                            p.
+                                Duis ligula turpis, placerat eget lobortis vitae, euismod vulputate orci. Suspendisse potenti. In hac habitasse platea dictumst.
+                            a(href='#').btn.btn-variant-1.btn-primary.btn-default.btn-sm.round-xl Let's do it
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.bg-dark-var1
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3
+                    h1.text-bold Choose Your Plan
+                    p.lead.
+                        We worked out an amazing combination of vast functionality
+                        and user's comfort. It will totally impress you with its power!
+            .row.offset-1.flow-offset-2
+                .col-sm-6.col-lg-3
+                    .thumbnail.thumbnail-3.pricing-box.pricing-box-3.bg-white
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        h2.text-uppercase.text-bold.letter-spacing-1.text-primary #[sup $]20#[sub /mo]
+                        .caption
+
+                            ul.list-unstyled
+                                li Highly Customizable
+                                li Pre-Built Pages
+                                li Clean Design
+                                li Extensive Options
+                                li: a(href='#').link Get started
+                .col-sm-6.col-lg-3
+                    .thumbnail.thumbnail-3.pricing-box.pricing-box-3.bg-white
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        h2.text-uppercase.text-bold.letter-spacing-1.text-primary #[sup $]143#[sub /mo]
+                        .caption
+
+                            ul.list-unstyled
+                                li Highly Customizable
+                                li Pre-Built Pages
+                                li Clean Design
+                                li Extensive Options
+                                li: a(href='#').link Get started
+                .col-sm-6.col-lg-3
+                    .thumbnail.thumbnail-3.pricing-box.pricing-box-3.bg-white
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        h2.text-uppercase.text-bold.letter-spacing-1.text-primary #[sup $]170#[sub /mo]
+                        .caption
+
+                            ul.list-unstyled
+                                li Highly Customizable
+                                li Pre-Built Pages
+                                li Clean Design
+                                li Extensive Options
+                                li: a(href='#').link Get started
+                .col-sm-6.col-lg-3
+                    .thumbnail.thumbnail-3.pricing-box.pricing-box-3.bg-white
+                        h6.text-uppercase.text-light-clr.letter-spacing-1 economy
+                        h2.text-uppercase.text-bold.letter-spacing-1.text-primary #[sup $]419#[sub /mo]
+                        .caption
+
+                            ul.list-unstyled
+                                li Highly Customizable
+                                li Pre-Built Pages
+                                li Clean Design
+                                li Extensive Options
+                                li: a(href='#').link Get started
+
+    //End section
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

@@ -1,0 +1,28 @@
+
+-var  rd_navbar_class_ajuster = "bg-white minimal top-panel-none toggles-none"
+
+-var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed','data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+
+header(class="#{header_class}")
+    include ../navbar/navbar
+    section
+        //Swiper
+        .swiper-container.swiper-slider(data-autoplay="5000" data-slide-effect="fade" data-loop="false")
+            .jumbotron.text-center
+                    h1
+                        small !{header_small}
+                        |!{header_h1}
+                    p.big.
+                        !{header_big}
+                    !{header_content}
+            .swiper-wrapper
+                .swiper-slide(data-slide-bg="images/header-4.jpg")
+                        .swiper-slide-caption
+
+                .swiper-slide(data-slide-bg="images/header-5.jpg")
+                        .swiper-slide-caption
+
+                .swiper-slide(data-slide-bg="images/header-3.jpg")
+                        .swiper-slide-caption
+
+

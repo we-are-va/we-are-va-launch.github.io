@@ -1,0 +1,53 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Extras"
+    - var title = "Maintenance page"
+    - var header_class = "bg-image bg-image-2"
+
+block head
+
+block header
+    header(class="#{header_class}")
+        -var  rd_navbar_class_ajuster = "top-panel-none-items"
+        -var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed', 'data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+        include ../navbar/navbar
+
+
+
+        = '\n'
+        //Start section
+        section.well-xl.text-center.user-info-section
+            .container
+                h1.text-uppercase.text-white The website is
+                    small.text-white in maintenance mode.
+                .col-md-8.col-md-offset-2.well.well-sm
+                    p.text-white.
+                        Custom maintenance mode page. In an ideal world this website wouldn't exist, a client would acknowledge the importance of having web copy before the design starts. Needless to say it's very important, content is king and people are beginning to understand.
+
+                form.form-width-2.offset-1.text-white
+                    div.form-group
+                        label(for="exampleInputEmail1").text-uppercase.font-secondary
+                        input(type="email" placeholder="Name@domainname.com").width-2.text-white.form-control.bg-rgba#exampleInputEmail1
+
+                        button(type="submit").btn.btn-primary.btn-xs.round-xl be the 1st to notify
+
+        //End section
+
+block content
+
+
+
+
+
+
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

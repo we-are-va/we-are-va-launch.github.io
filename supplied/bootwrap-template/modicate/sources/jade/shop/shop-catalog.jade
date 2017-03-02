@@ -1,0 +1,148 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Shop"
+    - var title = "Product catalog"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Smart title about shopping"
+    -var header_small = "Shop"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb
+                    li: a(href="index.html") Home
+                    li: a(href="#") Shop
+                    li.active: a(href="#") Product catalog
+
+    = '\n'
+    //Start section
+    section.text-center.offset-1
+        .container
+            h1 Product catalog
+            .row.flow-offset-1
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-1.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-2.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-3.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-4.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-5.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-6.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-7.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-8.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-9.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-10.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-11.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price $12.49
+                .col-xs-6.col-md-3
+                    .product.tumbnail.thumbnail-3
+                        a(href='shop-product.html')
+                            img(src="images/shop-12.jpg" alt="")
+                        .caption
+                            h6: a(href='shop-product.html') Short Sleeve T-Shirt
+                            span.price: del $24.99
+                            span.price.sale $12.49
+
+
+
+    = '\n'
+    //Start section
+    section.well.text-center.text-md-left
+        .container
+            div.col-inset-2.text-center.btn-group(aria-label="First group" role="group")
+                a(href='#').btn.btn-default.round-small.active 1
+                a(href='#').btn.btn-default.round-small 2
+                a(href='#').btn.btn-default.round-small 3
+                span.text-light-clr.font-secondary ...
+                a(href='#').btn.btn-default.round-small 8
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

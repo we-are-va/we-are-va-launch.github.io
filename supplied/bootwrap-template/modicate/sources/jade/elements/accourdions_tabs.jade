@@ -1,0 +1,96 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Elements"
+    - var title = "Accourdions & Tabs"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "With a nice modern and <br class='hidden-md hidden-sm hidden-xs'> intuitive interface"
+    -var header_small = "Tabs & Accordions"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html").text-primary Home
+        li: a(href="#") Elements
+        li.active Tabs & Accordions
+
+    section.text-center.well.well-sm
+        .container
+            .row
+                .col-md-12.col-lg-6.col-lg-offset-3
+                    h1.text-bold Tabs & Accordions
+                    p.lead.
+                        With a nice modern and intuitive interface you can control contents to be contained and organised within a single frame.
+    section.text-center.well.section-border
+        .container
+            h5.text-bold.text-center Horizontal Tabs
+            .row
+                .col-lg-10.col-lg-offset-1
+                    //Tabs
+                    ul.nav.nav-tabs.text-center#myTabs(role="tablist")
+                        li.active.round-xl(role="presentation"): a.round-xl(href="#tab0" aria-controls="tab0" role="tab" ) Tab 0
+                        li.round-xl(role="presentation"): a.round-xl(href="#tab1" aria-controls="tab1" role="tab" ) Tab 1
+                        li.round-xl(role="presentation"): a.round-xl(href="#tab2" aria-controls="tab2" role="tab" ) Tab 2
+                        li.round-xl(role="presentation"): a.round-xl(href="#tab3" aria-controls="tab3" role="tab" ) Tab 3
+                        li.round-xl(role="presentation"): a.round-xl(href="#tab4" aria-controls="tab4" role="tab" ) Tab 4
+
+
+                    //Tab panes
+                    div.tab-content.text-sm-left
+                        .tab-pane.active.fade.in(role="tabpanel" id="tab0") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates?  molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident qui quo repellat sequi sunt totam veritatis vitae. <br><br> Dolores esse nam obcaecati praesentium quod? Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="tab1")  Nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident qui quo repellat sequi sunt totam veritatis vitae. <br><br> Dolores esse nam obcaecati praesentium quod? Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="tab2")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates!<br><br>  A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id itiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="tab3")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="tab4")  Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem? A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident qui quo repellat sequi sunt totam veritatis vitae.
+
+    section.text-center.well.section-border
+        .container
+            h5.text-center.text-bold Vertical Tabs
+            .row
+                .col-sm-3
+                    //Vertical Tabs
+                    ul.nav.nav-tabs.vertical-tabs.text-center#myTabs2(role="tablist")
+                        li.active.round-xl(role="presentation"): a.round-xl(href="#vtab0" aria-controls="tab0" role="tab" ) Tab 0
+                        li.round-xl(role="presentation"): a.round-xl(href="#vtab1" aria-controls="vtab1" role="tab" ) Tab 1
+                        li.round-xl(role="presentation"): a.round-xl(href="#vtab2" aria-controls="vtab2" role="tab" ) Tab 2
+                        li.round-xl(role="presentation"): a.round-xl(href="#vtab3" aria-controls="vtab3" role="tab" ) Tab 3
+                        li.round-xl(role="presentation"): a.round-xl(href="#vtab4" aria-controls="vtab4" role="tab" ) Tab 4
+                .col-sm-9
+                    //Vertical Tab panes
+                    div.tab-content.tab-conten-vert.text-sm-left
+                        .tab-pane.active.fade.in(role="tabpanel" id="vtab0") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates?  molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident qui quo repellat sequi sunt totam veritatis vitae. <br><br> Dolores esse nam obcaecati praesentium quod? Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="vtab1")  Nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident qui quo repellat sequi sunt totam veritatis vitae. <br><br> Dolores esse nam obcaecati praesentium quod? Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="vtab2")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates!<br><br>  A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id itiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="vtab3")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem?
+                        .tab-pane.fade(role="tabpanel" id="vtab4")  Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem? A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provident, quod repudiandae! Accusantium aliquid amet aut beatae consequatur dignissimos dolores ducimus fuga, id iste itaque molestias nisi nostrum omnis perspiciatis quasi qui, quia quisquam, tenetur ullam unde velit veniam! Aliquam aliquid aut commodi cumque dolorem, ducimus enim eos harum id illum, ipsa iusto, laborum magnam maiores minima necessitatibus obcaecati optio provident qui quo repellat sequi sunt totam veritatis vitae.
+
+    section.well.well-inset-2
+        .container
+            h5.text-center.text-bold Accordion
+            .row
+                .col-xs-12
+                    .responsive-tabs(data-type="accordion")
+                        ul.resp-tabs-list
+                            li What Images, Videos, Code or Music Can I Use in my Items?
+                            li Can I use trademarked names in my items?
+                            li Tips for Increasing Your Referral Income
+                            li How can I get support for an item which isn't working correctly?
+
+                        div.resp-tabs-container
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud
+                            div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

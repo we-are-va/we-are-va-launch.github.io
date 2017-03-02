@@ -1,0 +1,255 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "Services"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "About Our Multipurpose Theme"
+    -var header_small = "Services"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active: a(href="#") Services
+
+
+    = '\n'
+    //Start section
+    section.text-center.text-sm-left.well.well-sm.section-border
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3.bg-white.text-center
+                    h1.text-bold About Our Multipurpose Theme
+                    p.lead.
+                        We worked out an amazing combination of vast functionality and user's comfort. It will totally impress you with its power!
+            .row.offset-1.flow-offset-3
+                .col-sm-6
+                    .box-sm.box-skin-1.bg-lighter.box-skin-left-offset-negative
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.line-height-1.fa-code
+                        .box__body.box__middle
+                            h5: a(href='#') Clean code
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                .col-sm-6
+                    .box-sm.box-skin-1.bg-lighter.box-skin-right-offset-negative
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.line-height-1.fa-rocket
+                        .box__body.box__middle
+                            h5: a(href='#') SEO Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                .col-sm-6
+                    .box-sm.box-skin-1.bg-lighter.box-skin-left-offset-negative
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.line-height-1.fa-compass
+                        .box__body.box__middle
+                            h5: a(href='#') Incredibly Flexible
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                .col-sm-6
+                    .box-sm.box-skin-1.bg-lighter.box-skin-right-offset-negative
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.line-height-1.fa-heartbeat
+                        .box__body.box__middle
+                            h5: a(href='#') Retina Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.text-md-left.well.well-sm.section-border
+        .container
+            h1.text-center Our Services
+            .row
+                .col-sm-12.col-md-4.col-md-push-4.text-center.inset-sm
+                    div.relative
+                        img.phone_1(src='images/phone-1.png' alt='')
+
+
+                        svg#svg-phone_1(version="1.1" viewBox="0 0 275 540" width="275px" height="540px")
+                            path#phone(fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M183,1c18.665,0,29.335,0,44,0c0,1,0,2,0,3c21.595-0.146,30.235,5.71,39,22c1,0.667,2,1.333,3,5c4.243,11.06,4,37.589,4,60c0,44.996,0,90.004,0,135c0,73.326,0,146.674,0,220c0,18.998,0,38.002,0,46c0,12.022,0.526,22.817-4,30c-11.989,19.022-32.434,17-63,17c-39.33,0-78.67,0-118,0c-17.998,0-36.002,0-52,0c-15.333-0.333-12.667-4.667-16-3c-2.538-1.92-12.781-16.644-14-27c0-1.667,0-3.333,0-5c-3.723-13.422-1-38.227-1-54c0-55.995,0-112.005,0-168c0-30.33,0-60.67,0-91c0-6.666,0-13.334,0-20c-0.667,0-1.333,0-2,0c0-6,0-12,0-18c0.667-0.333,1.333-0.667,2-1c0-9.666,0-19.334,0-29c-0.667,0-1.333,0-2,0c0-6,0-12,0-18c0.667,0,1.333,0,2,0c0-1.667,0-3.333,0-5c0-8.666,0-17.334,0-26c-0.667,0-1.333,0-2,0c0-8.666,0-17.334,0-26c0.667,0,1.333,0,2,0c0-4.666,0-9.334,0-14c2.542-8.685,7.445-18.225,14-23C32.223,1.911,49.231,4,75,4c35.997,0,72.003,0,108,0C183,3,183,2,183,1z")
+                            path#screen(fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M22,97c77.659,0,155.341,0,233,0c0,116.322,0,232.678,0,349c-77.659,0-155.341,0-233,0C22,329.678,22,213.322,22,97z")
+                            path#rnd1(fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M139,467c13.807,0,25,11.193,25,25s-11.193,25-25,25s-25-11.193-25-25S125.193,467,139,467z")
+                            path#rnd(fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M92,43c3.866,0,7,3.134,7,7s-3.134,7-7,7s-7-3.134-7-7S88.134,43,92,43z")
+                            path#din1(fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M123,23c9.666,0,19.334,0,29,0c0,2,0,4,0,6c-9.666,0-19.334,0-29,0C123,27,123,25,123,23z")
+                            path#din(fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" d="M113,45c16.998,0,34.001,0,51,0c0,3,0,6,0,9c-16.999,0-34.002,0-51,0C113,51,113,48,113,45z")
+
+
+
+                .col-sm-6.col-md-4.col-md-pull-4.text-md-right
+                    .box-md.inset-3.direction-md-rtl.max-width
+                        .box__left
+                            span.icon.icon-md.icon-primary.icon-circle-md-primary.fa-rocket
+                        .box__body.box__middle
+                            h5: a(href='#') SEO Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-md.inset-3.direction-md-rtl.max-width
+                        .box__left
+                            span.icon.icon-md.icon-primary.icon-circle-md-primary.fa-compass
+                        .box__body.box__middle
+                            h5: a(href='#') Incredibly Flexible
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-md.inset-3.direction-md-rtl.max-width
+                        .box__left
+                            span.icon.icon-md.icon-primary.icon-circle-md-primary.fa-commenting-o
+                        .box__body.box__middle
+                            h5: a(href='#') Quick Support
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+
+                .col-sm-6.col-md-4
+                    .box-md.inset-3.max-width
+                        .box__left
+                            span.icon.icon-md.icon-primary.icon-circle-md-primary.fa-code
+                        .box__body.box__middle
+                            h5: a(href='#') Clean Code
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-md.inset-3.max-width
+                        .box__left
+                            span.icon.icon-md.icon-primary.icon-circle-md-primary.fa-heartbeat
+                        .box__body.box__middle
+                            h5: a(href='#') Retina Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-md.inset-3.max-width
+                        .box__left
+                            span.icon.icon-md.icon-primary.icon-circle-md-primary.fa-pencil-square-o
+                        .box__body.box__middle
+                            h5: a(href='#') Clean Design
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.text-sm-left.well.well-sm.section-border
+        .container
+            h1.text-center Our Services
+            .row
+                .col-sm-4.col-md-5.text-center
+                    img(src='images/phone-1.png' alt='')
+                .col-sm-8.col-md-6
+                    p.inset-3.
+                        We worked out an amazing combination of vast functionality
+                        and user’s comfort. It will totally impress you with its power!
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-code
+                        .box__body.box__middle
+                            h5: a(href='#') Clean code
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-heartbeat
+                        .box__body.box__middle
+                            h5: a(href='#') Retina Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-pencil-square-o
+                        .box__body.box__middle
+                            h5: a(href='#') Clean Design
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.text-sm-left.well.well-sm.section-border
+        .container
+            h1.text-center Our Services
+            .row
+                .col-sm-12.col-md-4.text-center
+                    img(src='images/phone-1.png' alt='')
+                .col-sm-6.col-md-4
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-rocket
+                        .box__body.box__middle
+                            h5: a(href='#') SEO Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-compass
+                        .box__body.box__middle
+                            h5: a(href='#') Incredibly Flexible
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-commenting-o
+                        .box__body.box__middle
+                            h5: a(href='#') Quick Support
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                .col-sm-6.col-md-4
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-code
+                        .box__body.box__middle
+                            h5: a(href='#') Clean code
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-heartbeat
+                        .box__body.box__middle
+                            h5: a(href='#') Retina Ready
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+                    .box-sm.inset-3
+                        .box__left
+                            span.icon.icon-md.icon-primary.line-height-1.fa-pencil-square-o
+                        .box__body.box__middle
+                            h5: a(href='#') Clean Design
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod re et dolore...
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.text-sm-left.well.well-sm
+        .container
+            .row.flow-offset-1
+                .col-sm-4
+                    span.icon.icon-xxl.icon-primary.fa-desktop
+                    h5: a(href='#') E-COMMERCE SOLUTIONS
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                .col-sm-4
+                    span.icon.icon-xxl.icon-primary.fa-puzzle-piece
+                    h5: a(href='#') WEB DEVELOPMENT
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                .col-sm-4
+                    span.icon.icon-xxl.icon-primary.fa-envelope-o
+                    h5: a(href='#') MARKETING + STRATEGY
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+    //End section
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

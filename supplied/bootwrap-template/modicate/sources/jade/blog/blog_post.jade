@@ -1,0 +1,220 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Blog"
+    - var title = "Post page"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Our Latest News"
+    -var header_small = "Blog"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb
+                    li: a(href="index.html") Home
+                    li: a(href="#") Blog
+                    li: a(href="#") Timeline
+                    li.active: a(href="#") Post page
+
+    = '\n'
+    //Start section
+    section.text-center.text-md-left.offset-1
+        .container
+            .row
+                .col-xs-12.section-border
+                    article.well
+                        h1 This is a Standard Post with a Preview Image
+                        .blog-info
+                            .pull-md-left
+                                time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                a.badge.fa-user.text-uppercase.font-secondary Admin
+                                span.tags
+                                    a.badge.fa-tags
+                                    a.post-tag.round-xl.small General
+                                    a.post-tag.round-xl.small Media
+                                a.badge.fa-comments.text-uppercase.font-secondary 13 comments
+                        img(src="images/blog-19.jpg" alt="").offset-5
+                        p.lead.offset-2.text-justify.
+                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br><br>
+                            Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
+
+                        img(src="images/blog-20.jpg" alt="").pull-md-left.img-inset-1
+                        p.lead.text-justify.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime<br><br>
+                                                        I optio provident qui quo repellat sequi sunt totam veritatis vitae. Dolores esse nam obcaecati praesentium quod? Accusamus ad aliquam asperiores beatae blanditiis consectetur  officiis quae quos #[span.text-light-clr (od repudiandae accusantium aliquid amet aut) ].<br><br>
+                                                        Accusamus ad aliquam asperiores beatae blanditiis consectetur consequuntur culpa doloremque ea exercitationem, facilis illum laborum magnam maiores necessitatibus nostrum numquam officiis quae quos, rem rerum sunt suscipit tempora vero voluptatem? Adipisci assumenda at aut autem consequuntur culpa cupiditate debitis dolor dolore doloribus error eum ex, excepturi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus molestias nam nobis officia quidem quisquam ratione recusandae reprehenderit veniam vero voluptates! A ad aspernatur autem corporis, culpa deleniti dignissimos id in iure, laudantium magnam maxime nostrum, praesentium quam soluta tempora voluptates? Alias aliquam architecto consequatur doloribus dolorum est ex excepturi facere in, iusto pariatur provide
+
+                .col-xs-12.section-border
+                    .blog-info.blog-info-inset.text-center.text-lg-left
+                        .pull-lg-left
+                            span.tags.wrap-normal
+                                a.badge.fa-tags
+                                a.post-tag.round-xl.small General
+                                a.post-tag.round-xl.small Information
+                                a.post-tag.round-xl.small Media
+                                a.post-tag.round-xl.small Press
+                                a.post-tag.round-xl.small Gallery
+                                a.post-tag.round-xl.small Illustration
+                        .pull-lg-right.inline-block
+                            span.small.font-secondary.text-uppercase.text-light-clr Share this
+                            ul.list-inline.list-inline-4.pull-md-right
+                                li: a.fa-facebook(href="#").text-info
+                                li: a.fa-pinterest-p(href="#").text-danger
+                                li: a.fa-twitter(href="#").text-primary
+                                li: a.fa-google-plus(href="#").text-danger
+                                li: a.fa-instagram(href="#").text-info
+                                li: a.fa-rss(href="#")
+                                li: a.fa-envelope(href="#").text-info
+                .col-xs-12.text-center.text-md-left.post-links.offset-5
+                    a(href='#').btn-link.pull-md-left.fa-angle-left This is a Standard post with a Slider Gallery
+                    br.hidden-lg.hidden-md
+                    a(href='#').btn-link.pull-md-right.fa-angle-right This is an Embedded Video Post
+                .col-xs-12.text-center.text-md-left.offset-2.section-border
+                    .post-autor.col-inset-2
+                        h6 Posted by #[span.text-primary John Doe]
+                        .box-md.offset-5
+                            .box__left
+                                img(src="images/blog-21.jpg" alt="").img-circle
+                            .box__body.box__middle
+                                p.big.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet, eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium vitae ab sint earum voluptate velit beatae alias fugit accusantium laboriosam nisi reiciendis deleniti tenetur molestiae maxime id quaerat consequatur fugiat aliquam laborum nam aliquid. Consectetur, perferendis?
+
+                .col-xs-12.text-center.text-md-left.well
+                    h5 Related Posts:
+                    .row.no-offset
+                        .col-sm-6.col-md-4
+                            article.thumbnail.thumbnail-4.section-border.well
+                                img(src="images/blog-3.jpg" alt="")
+                                .caption
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+                        .col-sm-6.col-md-4
+                            article.thumbnail.thumbnail-4.section-border.well
+                                img(src="images/blog-4.jpg" alt="")
+                                .caption
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+                        .col-sm-6.col-md-4
+                            article.thumbnail.thumbnail-4.section-border.well
+                                img(src="images/blog-5.jpg" alt="")
+                                .caption
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+                        .col-sm-6.col-md-4
+                            article.thumbnail.thumbnail-4.section-border.well
+                                img(src="images/blog-6.jpg" alt="")
+                                .caption
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+                        .col-sm-6.col-md-4
+                            article.thumbnail.thumbnail-4.section-border.well
+                                img(src="images/blog-7.jpg" alt="")
+                                .caption
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+                        .col-sm-6.col-md-4
+                            article.thumbnail.thumbnail-4.section-border.well
+                                img(src="images/blog-8.jpg" alt="")
+                                .caption
+                                    h4: a(href="blog_post.html") This is a Standard Post with a Preview Image
+                                    p.text-dark-variant-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in.
+                                    .blog-info
+                                        .pull-md-left
+                                            time(datetime="2015").meta.fa-calendar Feb 10, 2014
+                                            a(href='#').badge.fa-comments.font-secondary 13
+                                        a(href="blog_post.html").btn-link Read More
+
+                .col-xs-12.text-center.text-md-left.section-border.well
+                    h5 3 Comments
+                    .row.comments
+                        .col-xs-12
+                            blockquote.box-sm
+                                .box__left.text-center
+                                    img(src="images/blog-26.jpg" alt="").img-circle
+                                .box__body.box__middle.btn-shadow.round-small
+                                    h6 John Doe
+                                    time(datetime="2015").meta April 24, 2012 at 10:46 am
+                                    p.big.text-light-clr.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet, eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium
+                        .col-xs-12.inset-1.text-right
+                            blockquote.box-sm.back-comment
+                                .box__left.text-center
+                                    img(src="images/blog-26.jpg" alt="").img-circle
+                                .box__body.box__middle.btn-shadow.round-small
+                                    h6 John Doe
+                                    time(datetime="2015").meta April 24, 2012 at 10:46 am
+                                    p.big.text-light-clr.
+                                        Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        .col-xs-12.inset-1
+                            blockquote.box-sm
+                                .box__left.text-center
+                                    img(src="images/blog-26.jpg" alt="").img-circle
+                                .box__body.box__middle.btn-shadow.round-small
+                                    h6 John Doe
+                                    time(datetime="2015").meta April 24, 2012 at 10:46 am
+                                    p.big.text-light-clr.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet, eligendi et nobis neque minus mollitia sit repudiandae ad repellendus recusandae blanditiis praesentium
+
+    section.well.well-inset-2
+        .container
+            .row
+                .col-xs-12
+                    h5.text-bold.text-center.text-md-left Leave a Comment
+                    form.row.label-insets
+                        div.form-group.col-sm-4
+                            label(for="exampleInputText1").text-uppercase.font-secondary First Name
+                            input(type="text" placeholder="Your First Name").form-control#exampleInputText1
+                        div.form-group.col-sm-4
+                            label(for="exampleInputEmail1").text-uppercase.font-secondary E-mail
+                            input(type="email" placeholder="example@domain.com").form-control#exampleInputEmail1
+                        div.form-group.col-sm-4
+                            label(for="exampleInputText2").text-uppercase.font-secondary Website
+                            input(type="text" placeholder="Your Website").form-control#exampleInputText2
+                        div.form-group.col-sm-12
+                            label(for="exampleTextarea").text-uppercase.font-secondary your message
+                            textarea.form-control#exampleTextarea(rows="3" placeholder="Write your comment here")
+
+                        .col-xs-12.text-center
+                            button(type="submit").btn.btn-primary.btn-xs.round-xl.form-el-offset-1 Submit comment
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

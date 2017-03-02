@@ -1,0 +1,35 @@
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var title = "Search Results"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+
+block header
+    -var header_h1 = "We love our work"
+    -var header_small = "Search Results"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+
+block content
+
+    //Search Results
+    section.well.well-sm
+        .container
+            h2.text-center Search Results
+            .row
+                .col-xs-12
+                    .rd-navbar-search-results
+    //END Search Results
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

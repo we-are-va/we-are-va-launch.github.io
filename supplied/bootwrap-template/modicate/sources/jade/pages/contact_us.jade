@@ -1,0 +1,91 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "Contact Us"
+    - var header_class = "bg-image bg-image-2 well-inset-3"
+
+block head
+
+block header
+    header(class="#{header_class}")
+        -var  rd_navbar_class_ajuster = "top-panel-none-items"
+        -var  rd_navbar_data_ajuster = {'data-layout':'rd-navbar-fixed', 'data-hover-on':'false', 'data-stick-up':'false', 'data-sm-layout':'rd-navbar-fullwidth', 'data-md-layout':'rd-navbar-static'}
+        include ../navbar/navbar
+        section.text-center
+            .jumbotron.text-center.offset-large
+                 h1
+                     small GET IN TOUCH
+                     |Let's Create Something Together!
+
+            ol.breadcrumb
+                li: a(href="index.html") Home
+                li: a(href="#") Elements
+                li.active: a(href="#") Contact us
+
+        = '\n'
+        //Start section
+        section.well.well-sm
+            .container
+                .row.flow-offset-1
+                    .col-md-8.btn-shadow.inset-sm-min.img-rounded.bg-white
+                        h5.text-center GET IN TOUCH
+
+                        form.row.label-insets.rd-mailform(method="post" action="bat/rd-mailform.php")
+                            //RD Mailform Type
+                            input(type="hidden" name="form-type" value="contact")
+                            //END RD Mailform Type
+                            div.form-group.col-sm-6
+                                label(for="exampleInputText1").text-uppercase.font-secondary.form-label First Name
+                                input(type="text"
+                                placeholder="Your First Name"
+                                name="name"
+                                data-constraints="@NotEmpty @LettersOnly").form-control#exampleInputText1
+                            div.form-group.col-sm-6
+                                label(for="exampleInputText2").text-uppercase.font-secondary Last Name
+                                input(type="text" placeholder="Your Last Name" name="name2"
+                                data-constraints="@NotEmpty @LettersOnly").form-control#exampleInputText2
+                            div.form-group.col-sm-12
+                                label(for="exampleTextarea").text-uppercase.font-secondary your message
+                                textarea.form-control#exampleTextarea(rows="3" placeholder="Write your message here" name="message" data-constraints="@NotEmpty")
+                            div.form-group.col-sm-6
+                                label(for="exampleInputEmail1").text-uppercase.font-secondary E-mail
+                                input(placeholder="E-mail" type="text"
+                                name="email" data-constraints="@NotEmpty @Email").form-control#exampleInputEmail1
+
+                            .col-sm-6
+                                button(type="submit").btn.btn-primary.btn-xs.round-xl.btn-block.form-el-offset-1 Send message
+                                div.mfInfo
+                    .col-md-4.text-center.text-md-left
+                        address.contact-block.inset-sm-min-2.img-rounded.bg-white.btn-shadow
+                            dl
+                                dt.h6 ADDRESS
+                                dd 123, New Lenox, Chicago, IL 60606
+                                dt.h6 WE ARE OPEN
+                                dd Open hours: 8.00-18.00 Mon-Sat
+                                dt.h6 PHONE
+                                dd
+                                    a(href='callto:#') 123-456-7890, &nbsp;
+                                    a(href='callto:#') 098-765-4321
+                                dt.h6 E-MAIL
+                                dd: a(href='mailto:#') info@example.com
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+        //End section
+
+block content
+
+
+
+
+
+
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

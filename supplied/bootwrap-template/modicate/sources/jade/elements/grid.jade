@@ -1,0 +1,201 @@
+
+
+extends ../layouts/default
+
+block vars
+    - var active = "Elements"
+    - var title = "Grid"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "Choose your Size, Style & Color"
+    -var header_small = "Grid systems"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Elements
+        li.active Grid
+
+    section.text-center.well.well-sm
+        .container
+            .row
+                .col-lg-6.col-lg-offset-3
+                    h1.text-bold Grid Systems
+                    p.lead.
+                        A responsive fluid grid system that appropriately scales up to 12 columns with gorgeous options full-width and boxed options.
+    section.text-center.text-md-justify.well
+        .container-fluid
+            h5.text-bold.text-center Full-Width Grid System
+            .row.full-border
+                .col-xs-12.col-inset
+                    h5.text-bold 1 / 1
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid animi aspernatur aut commodi dignissimos dolor dolores dolorum earum eveniet facilis fuga ipsum laudantium maxime minima nihil nisi perferendis placeat provident quas quasi quidem ratione rem repellendus sunt, veniam vero voluptates. A beatae corporis distinctio dolores eius, exercitationem nam quae quidem ratione ullam voluptas voluptates? Alias dignissimos numquam quaerat reprehenderit similique tenetur. Ad adipisci animi dignissimos harum praesentium repudiandae sed! Asperiores nostrum omnis quibusdam repellat vel. Ad atque dolor ex, excepturi facere fugiat minima molestiae nemo quaerat quo sequi soluta. Ab aperiam, eaque eius explicabo facere fugit, iusto laudantium nostrum officiis, quis quo quos ratione rerum saepe sequi sunt tempore ullam voluptatum. A ad alias cupiditate delectus dignissimos distinctio explicabo facere id inventore iure magnam minus molestiae nam, natus odio perferendis praesentium quas quia rem saepe sunt, suscipit tempore voluptatem? Commodi fugit ipsa quia sapiente. Amet, commodi corporis culpa cupiditate debitis deleniti, dolor eos error est facere harum incidunt laudantium odit omnis praesentium, quisquam quod saepe similique sint sit voluptatem.
+            .row.full-border
+                .col-xs-12.col-sm-6.col-inset
+                    h5.text-bold 1 / 2
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia nobis odio porro quas quasi, quia quidem rem sed sit unde voluptatibus! Ad culpa ea laudantium natus, omnis optio recusandae repellat sapiente totam vel! Ad adipisci autem consequatur cumque delectus dolorem enim exercitationem itaque laborum maiores neque non numquam odit pariatur quaerat quisquam, quos rem repellendus sequi.
+                .col-xs-12.col-sm-6.col-inset
+                    h5.text-bold 1 / 2
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia nobis odio porro quas quasi, quia quidem rem sed sit unde voluptatibus! Ad culpa ea laudantium natus, omnis optio recusandae repellat sapiente totam vel! Ad adipisci autem consequatur cumque delectus dolorem enim exercitationem itaque laborum maiores neque non numquam odit pariatur quaerat quisquam, quos rem repellendus sequi.
+            .row.full-border
+                .col-xs-12.col-sm-4.col-inset
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia nobis odio porro quas quasi, quia quidem rem sed sit unde voluptatibus! Ad culpa ea laudantium natus, omnis optio recusandae repellat sapiente
+                .col-xs-12.col-sm-4.col-inset
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia nobis odio porro quas quasi, quia quidem rem sed sit unde voluptatibus! Ad culpa ea laudantium natus, omnis optio recusandae repellat sapiente
+                .col-xs-12.col-sm-4.col-inset
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia nobis odio porro quas quasi, quia quidem rem sed sit unde voluptatibus! Ad culpa ea laudantium natus, omnis optio recusandae repellat sapiente
+            .row.full-border
+                .col-xs-12.col-sm-6.col-md-3.col-inset
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia
+                .col-xs-12.col-sm-6.col-md-3.col-inset
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia
+                .col-xs-12.col-sm-6.col-md-3.col-inset
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia
+                .col-xs-12.col-sm-6.col-md-3.col-inset
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint veritatis? Aliquam blanditiis consequatur deserunt doloribus eligendi et harum in ipsam laboriosam laborum libero magnam mollitia
+            .row.full-border
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint verit
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint verit
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint verit
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint verit
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint verit
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque enim error ipsa libero quas sint verit
+            .row.full-border
+                .col-xs-12.col-sm-12.col-md-8.col-inset
+                    h5.text-bold 2 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto at consequuntur corporis dignissimos doloremque, eius est facere hic illo in labore laboriosam maxime natus non obcaecati odit officia perferendis provident quaerat qui sed similique sint suscipit velit voluptatem, voluptatum! Laudantium nam, necessitatibus perspiciatis possimus praesentium quasi quibusdam. Accusantium, atque commodi culpa cumque eaque explicabo in inventore itaque iusto neque odio possimus quasi ratione soluta tempora velit, voluptatibus. Accusantium aspernatur assumenda cumque debitis dicta dolorum hic minima neque, quibusdam quod repellendus, vel voluptatibus? Consequuntur corporis eius et harum inventore mollitia omnis quisquam! Accusamus dolorem ducimus fugit hic minima reiciendis totam? Alias consectetur expedita iusto libero, odit optio soluta unde volupta
+                .col-xs-12.col-sm-12.col-md-4.col-inset
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto at consequuntur corporis dignissimos doloremque, eius est facere hic illo in labore laboriosam maxime natus non obcaecati odit officia perferendis provident quaerat qui sed similique sint suscipit velit voluptatem, voluptatum! Laudantium nam, necessitatibus perspiciatis possimus
+
+
+    section.text-center.text-md-justify.well
+        .container
+            h5.text-bold.text-center Boxed Grid System
+            .row.section-border
+                .col-xs-12.col-inset-2
+                    h5.text-bold 1 / 1
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure molestiae nesciunt nisi, officia optio praesentium quaerat quia quibusdam quidem quod repellat saepe sint sunt velit veniam veritatis vero voluptas voluptates voluptatibus! Architecto assumenda consectetur esse praesentium rerum! Accusantium amet, assumenda dolorum expedita ipsa iusto nihil porro recusandae saepe sapiente sed vel! At aut consectetur deleniti facilis mollitia nam necessitatibus nesciunt non possimus quasi repellat sint suscipit, vero voluptas voluptate. A accusamus, aliquam amet culpa debitis dignissimos distinctio ea eius est, eum eveniet fugiat iure laudantium maiores nemo non odit optio quam, quia quo recusandae simili
+            .row.section-border
+                .col-xs-12.col-sm-6.col-inset-2
+                    h5.text-bold 1 / 2
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure molestiae nesciunt nisi, officia optio praesentium quaerat quia quibusdam quidem quod repellat saepe sint sunt velit veniam veritatis vero voluptas voluptates voluptatibus! Architecto assumenda consectetur esse pra
+                .col-xs-12.col-sm-6.col-inset-2
+                    h5.text-bold 1 / 2
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure molestiae nesciunt nisi, officia optio praesentium quaerat quia quibusdam quidem quod repellat saepe sint sunt velit veniam veritatis vero voluptas voluptates voluptatibus! Architecto assumenda consectetur esse pra
+            .row.section-border
+                .col-xs-12.col-sm-4.col-inset-2
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure molestiae nesciunt nisi, officia optio praesentium quaerat quia qui
+                .col-xs-12.col-sm-4.col-inset-2
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure molestiae nesciunt nisi, officia optio praesentium quaerat quia qui
+                .col-xs-12.col-sm-4.col-inset-2
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure molestiae nesciunt nisi, officia optio praesentium quaerat quia qui
+            .row.section-border
+                .col-xs-12.col-sm-6.col-md-3.col-inset-2
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure mol
+                .col-xs-12.col-sm-6.col-md-3.col-inset-2
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure mol
+                .col-xs-12.col-sm-6.col-md-3.col-inset-2
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure mol
+                .col-xs-12.col-sm-6.col-md-3.col-inset-2
+                    h5.text-bold 1 / 4
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae corporis cumque deleniti deserunt doloribus eaque eos explicabo id illo ipsa iure mol
+            .row.section-border
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset-2
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset-2
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset-2
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset-2
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset-2
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae
+                .col-xs-12.col-sm-6.col-md-4.col-lg-2.col-inset-2
+                    h5.text-bold 1 / 6
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias assumenda atque beatae
+            .row.section-border
+                .col-xs-12.col-sm-12.col-md-8.col-inset-2
+                    h5.text-bold 2 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam architecto aut commodi consectetur corporis cum cumque dolorem doloremque dolores, eligendi enim ex exercitationem facere facilis in ipsa ipsam iste maxime molestiae nesciunt nihil nisi nulla pariatur placeat porro possimus quaerat quisquam reiciendis similique soluta tempore totam unde! Accusamus aliquid aut culpa delectus distinctio ea eveniet facilis illum impedit ipsum iste iusto libero maxime non nulla omnis quaerat quasi, qui quidem recusandae tempore ut veritatis voluptate?
+                .col-xs-12.col-sm-12.col-md-4.col-inset-2.section-border
+                    h5.text-bold 1 / 3
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam architecto aut commodi consectetur corporis cum cumque dolorem doloremque dolores, eligendi enim ex exercitationem facere facilis in ipsa ipsam iste maxime molestiae nesciunt nihil nisi nulla pa
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

@@ -1,0 +1,129 @@
+/**
+* @subsection   RD Twitter
+*/
+.row-custom{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.twitter {
+  &__item {
+    display: block;
+    opacity: 0;
+    background: $white-clr;
+    color: $gray-darker;
+    border: 1px solid #e8e8e8;
+    img{
+      transition: 0.5s;
+    }
+    &:hover {
+      .twitter__item__img-wrap{
+        img{
+          @include transform(scale(1.05));
+        }
+      }
+
+    }
+
+    time {
+      font-family: $font-family-base;
+      color: $gray-darker;
+      display: block;
+      line-height: 1.2;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      @media (min-width: $screen-sm-min) {
+        top: 50%;
+        will-change: transform;
+        @include transform(translateY(-50%));
+      }
+    }
+
+    &__tweet-wrap {
+      padding: 17px 24px;
+      @media (min-width: $screen-sm-min) {
+        padding: 34px 40px;
+      }
+      @media (min-width: $screen-md-min) {
+        padding: 19px 55px;
+      }
+    }
+
+    &__tweet {
+      font-size: 14px;
+      color: $gray-darker;
+
+
+
+      a {
+        &, &:active, &:focus {
+          color: $gray-darker;
+        }
+
+        &:hover {
+          color: $gray-darker;
+        }
+      }
+    }
+
+    &__meta {
+      font-family: $font-family-base;
+
+      * {
+        max-width: 170px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: middle;
+        @media (min-width: $screen-sm-min) {
+          max-width: 200px;
+        }
+      }
+
+      a {
+        margin-top: 5px;
+        display: inline-block;
+        &, &:active, &:focus {
+          color: $gray-darker;
+        }
+
+        &:hover {
+          color: $gray-darker;
+        }
+      }
+    }
+
+    &__media {
+      width: 100%;
+    }
+
+    &__img-wrap {
+      max-height: 250px;
+      overflow: hidden;
+    }
+
+  }
+  &__box {
+    padding: 17px;
+    border-bottom: 1px solid #e8e8e8;
+    @media (min-width: $screen-sm-min) {
+      padding: 33px;
+    }
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      left: 20px;
+      right: 20px;
+    }
+    .box__left {
+      padding-right: 10px;
+    }
+    + .twitter__item__tweet {
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+  }
+}

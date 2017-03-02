@@ -1,0 +1,176 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Pages"
+    - var title = "About Us"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "We love our work"
+    -var header_small = "About Us"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    ol.breadcrumb.section-border
+        li: a(href="index.html") Home
+        li: a(href="#") Pages
+        li.active: a(href="#") About Us
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.text-md-left
+        .container
+            .row.flow-offset-2
+                .col-md-4
+                    h4.text-bold WHY CHOOSE US
+                    hr.short.bg-primary
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus exercitationem fugit in, ipsum, itaque minus eaque
+                .col-md-4
+                    h4.text-bold OUR MISSION
+                    hr.short.bg-primary
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus exercitationem fugit in, ipsum, itaque minus eaque
+                .col-md-4
+                    h4.text-bold WHAT WE DO
+                    hr.short.bg-primary
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit in, ipsum, itaque minus exercitationem fugit in, ipsum, itaque minus eaque
+    //End section
+
+    = '\n'
+    //Start section
+    section.well.well-sm.well-inset-2.bg-dark-var2.text-center
+        .jumbotron
+            h1
+                small WE HAND-CRAFT CREATIVE
+                | Web Solutions with Solid Strategies
+            .btn-group-variant.no-offset
+                a.btn.btn-default.round-xl.btn-sm(href='#') Learn more
+                a.btn.btn-default.round-xl.btn-sm(href='#') Contact us
+    //End section
+
+    = '\n'
+    //Start section
+    section.bg-dark-var1.text-center
+        .container.counter-panel
+            .row
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="197")
+                    p.text-opacity.font-secondary.text-uppercase CUPS OF COFFEE
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="23")
+                    p.text-opacity.font-secondary.text-uppercase coders
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="98")
+                    p.text-opacity.font-secondary.text-uppercase designers
+                .col-xs-6.col-sm-6.col-md-3
+                    div.counter(data-from="0" data-to="7230")
+                    p.text-opacity.font-secondary.text-uppercase lines of code
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.text-md-left.section-border
+        .container
+            .row.flow-offset-2
+                .col-xs-6.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-desktop
+                        .box__body.box__middle
+                            h5 Web Design
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit
+                .col-xs-6.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-mobile
+                        .box__body.box__middle
+                            h5 Mobile Design
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit
+                .col-xs-6.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-envelope-o
+                        .box__body.box__middle
+                            h5 Marketing
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit
+                .col-xs-6.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-puzzle-piece
+                        .box__body.box__middle
+                            h5 Development
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit
+                .col-xs-6.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-rocket
+                        .box__body.box__middle
+                            h5 Search Optimization
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit
+                .col-xs-6.col-md-4
+                    .box-md.box-variant-1
+                        .box__left.box-md-inset-1
+                            span.icon.icon-md.icon-primary.fa-thumbs-up
+                        .box__body.box__middle
+                            h5 Social Media
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti eaque eum exercitationem fugit
+    //End section
+
+    = '\n'
+    //Start section
+    section.text-center.well.well-sm.section-border
+        .container
+            h1.text-bold Our Fantastic Team
+            p.lead Highly experienced professionals in web design.
+            .row.flow-offset-2
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/about_img1.jpg" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Jennifer Rogers
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/about_img2.jpg" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Kathryn Holmes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/about_img3.jpg" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Gregory Hayes
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+                .col-xs-6.col-md-3
+                    .thumbnail.thumbnail-3
+                        img(src="images/about_img4.jpg" alt="").img-rounded
+                        .caption.offset-1
+                            h6: a(href='team-member.html') Richard Patterson
+                            p.small.text-light-clr.text-uppercase web-designer
+                            +lists('ul','list-inline list-inline-3',['fa-facebook-square','fa-twitter-square','fa-google-plus-square'],['','',''])
+    //End section
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered

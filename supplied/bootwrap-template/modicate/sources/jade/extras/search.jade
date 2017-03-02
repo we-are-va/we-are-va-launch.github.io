@@ -1,0 +1,119 @@
+
+
+extends ../layouts/default
+include ../mixins/mixins
+
+
+block vars
+    - var active = "Extras"
+    - var title = "Search results page"
+    - var header_class = "page-header subpage_header"
+
+block head
+
+block header
+
+    -var header_h1 = "About Our Multipurpose Theme"
+    -var header_small = "Search results page"
+    -var header_big = ""
+    -var header_content = ""
+    include ../features/header_transparent
+
+block content
+    section.section-border.text-center.text-md-left
+        .container
+                ol.breadcrumb.pull-md-right
+                    li: a(href="index.html") Home
+                    li: a(href="#") Extras
+                    li.active: a(href="#") Search results
+                h5.text-uppercase.letter-spacing-1.pull-md-left.inset-4 77 Search results for: lorem
+
+
+    = '\n'
+    //Start section
+    section.text-center.text-md-left.well.well-sm.section-border
+        .container
+            .row
+                .col-md-8
+                    .row
+                        .col-xs-12(style='padding-bottom: 40px;').section-border
+
+                            h1.text-bold New Search
+                            p.lead.
+                                If you are not happy with the results below please do another search
+                            form.offset-1
+                                div.form-group
+                                    label(for="exampleInputSearch").text-uppercase.font-secondary
+                                    input(type="text" placeholder="Search").round-small.width-1.form-control#exampleInputSearch
+                                    button(type="submit").btn.btn-primary.btn-xs.round-small Search
+                    ul.search-results-list.text-left.row
+                        li.col-xs-12.section-border
+                            h3.text-bold.text-dark-variant-3: a(href='#') Header
+                                small.text-uppercase Page
+                            p.lead.
+                                Interfaces semantic; deliverables...
+                        li.col-xs-12.section-border
+                            h3.text-bold.text-dark-variant-3: a(href='#')  Home: Agency
+                                small.text-uppercase Page
+                            p.lead.
+                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem...
+                        li.col-xs-12.section-border
+                            h3.text-bold.text-dark-variant-3: a(href='#')  Home: Modern Shop
+                                small.text-uppercase Page
+                            p.lead.
+                                Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit,...
+                        li.col-xs-12.section-border
+                            h3.text-bold.text-dark-variant-3: a(href='#')  Monochromatic
+                                small.text-uppercase Page
+                            p.lead.
+                                Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Aenean commodo ligula eget dolor Aenean massa aliquam eget nibh etlibura. Aenean massa. Lorem ipsum dolor sit amet Aenean commodo ligula eget dolor Lorem ipsum dolor sit amet, consec tetuer aliquam eget nibh etlibura. Aenean commodo ligula eget dolor Aenean massa aliquam eget nibh etlibura. Aenean commodo...
+                        li.col-xs-12.section-border
+                            h3.text-bold.text-dark-variant-3: a(href='#')  Header
+                                small.text-uppercase Page
+                            p.lead.
+                                Interfaces semantic; deliverables...
+                    div.col-inset-2.text-center.btn-group(aria-label="First group" role="group")
+                        a(href='#').btn.btn-default.round-small.active 1
+                        a(href='#').btn.btn-default.round-small 2
+                        a(href='#').btn.btn-default.round-small 3
+                        span.text-light-clr.font-secondary ...
+                        a(href='#').btn.btn-default.round-small 8
+
+
+
+
+                .col-md-3.col-md-offset-1.inset-sm.sidebar
+                    h5 Sed Diam Nonumy
+                    p.text-justify.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+                    h5 Latest Project
+                    .img-box
+                        a(href='#'): img(src='images/sidebar-2.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-3.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-4.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-5.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-6.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-7.jpg' alt='')
+
+                    h5 Latest News
+                    ul.list-unstyled-2
+                        li: a.text-primary(href='#') Trends in UX Design
+                        li: a.text-primary(href='#') The little Person inside
+                        li: a.text-primary(href='#') Inspirational Quote
+                        li: a.text-primary(href='#') The Exploration
+                        li: a.text-primary(href='#') Places to get lost
+
+                    h5 Sponsor Widget
+                    .img-box
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+                        a(href='#'): img(src='images/sidebar-8.jpg' alt='')
+
+    //End section
+
+
+
+block footer
+    -var footer_class = "page-footer footer-centered text-center"
+    include ../features/footer_centered
