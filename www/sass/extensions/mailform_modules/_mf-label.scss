@@ -1,0 +1,59 @@
+/**
+* RD Input Label
+* @Section
+*/
+.form-label-date {
+  font-size: 14px;
+  line-height: 1.78571;
+  color: #b7b7b7;
+  position: absolute;
+  top: 25px;
+  left: 22px;
+
+  font-weight: 400;
+  // padding: 4px 21px;
+  padding: $input-padding;
+  transition: .3s all ease;
+  pointer-events: none;
+  letter-spacing:normal;
+
+}
+
+// .form-group.focused{
+//     .form-label-date{
+//       &.date{
+//       opacity: 0;
+//     }
+//   }
+// }
+.form-group.filled {
+  .form-label-date {
+    opacity: 0;
+  }
+}
+
+.form-label-date.focus {
+  opacity: .5;
+}
+
+.form-label-date.not-empty {
+  opacity: 0;
+}
+
+.form-group.filled {
+  .form-label-date {
+    opacity: 0;
+  }
+}
+
+.data-label {
+  padding-left: 19px;
+  display: inline-block;
+  max-width: 100%;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #cbcbc9;
+  letter-spacing: 0.06em;
+}

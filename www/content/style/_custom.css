@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+ * @license
+ * MyFonts Webfont Build ID 3351849, 2017-02-27T22:37:12-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: HAVEANICEDAYBasic-Bold by Cultivated Mind
+ * URL: http://www.myfonts.com/fonts/cultivated-mind/have-a-nice-day/bold-basic/
+ * Licensed pageviews: 200,000
+ * 
+ * Webfont: HAVEANICEDAYTall-Bold by Cultivated Mind
+ * URL: http://www.myfonts.com/fonts/cultivated-mind/have-a-nice-day/bold-tall/
+ * Licensed pageviews: 200,000
+ * 
+ * Webfont: HAVEANICEDAYWide-Bold by Cultivated Mind
+ * URL: http://www.myfonts.com/fonts/cultivated-mind/have-a-nice-day/bold-wide/
+ * Licensed pageviews: 220,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3351849
+ * Webfonts copyright: Copyright (c) 2013 by Cultivated Mind. All rights reserved.
+ * 
+ * © 2017 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/332529");
+@font-face {
+  font-family: 'HAVEANICEDAYBasic-Bold';
+  src: url("webfonts/332529_0_0.eot");
+  src: url("webfonts/332529_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/332529_0_0.woff2") format("woff2"), url("webfonts/332529_0_0.woff") format("woff"), url("webfonts/332529_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'HAVEANICEDAYTall-Bold';
+  src: url("webfonts/332529_1_0.eot");
+  src: url("webfonts/332529_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/332529_1_0.woff2") format("woff2"), url("webfonts/332529_1_0.woff") format("woff"), url("webfonts/332529_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'HAVEANICEDAYWide-Bold';
+  src: url("webfonts/332529_2_0.eot");
+  src: url("webfonts/332529_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/332529_2_0.woff2") format("woff2"), url("webfonts/332529_2_0.woff") format("woff"), url("webfonts/332529_2_0.ttf") format("truetype"); }

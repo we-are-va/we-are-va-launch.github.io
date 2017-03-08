@@ -1,0 +1,130 @@
+/**
+* @subsection   RD Instagram
+*/
+
+.instafeed {
+
+}
+
+.instagram-profile {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  .box__left{
+    padding-bottom: 0;
+
+  }
+  img {
+    max-width: 90px;
+    height: auto;
+    @media (min-width: $screen-sm-min) {
+      max-width: 90px;
+    }
+  }
+
+  img + * {
+    margin-top: 0;
+  }
+
+  &-link {
+    margin-top: 17px;
+    a {
+      font-family: $font-family-sec;
+      &, &:active, &:focus {
+        color: $gray-darker;
+      }
+
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+
+  * + .btn {
+    margin-top: 20px;
+  }
+  .btn + *{
+    margin-top: 10px;
+  }
+  //.btn-sm{
+  //  vertical-align: middle;
+  //  .icon-xs {
+  //    width: 20px;
+  //    height: 20px;
+  //    line-height: 1;
+  //    vertical-align: middle;
+  //  }
+  //}
+  &-meta {
+    margin-top: 26px;
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      @media (min-width: $screen-md-min) {
+        padding: 5px 40px;
+      }
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
+    dl {
+      font-size: 22px;
+      dt {
+        font-family: $font-family-sec;
+        color: $gray-darker;
+        display: inline-block;
+      }
+      dd{
+        display: inline-block;
+        padding-left: 10px;
+      }
+    }
+
+
+    //li + li {
+    //  border-left: 1px solid $gray-darker;
+    //}
+  }
+  .decoration-element-variant-1{
+    @media (min-width: $screen-md-min) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    & + *{
+      margin-top: 20px;
+      @media (min-width: $screen-md-min) {
+        vertical-align: middle;
+        margin-left: 40px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+a.thumb{
+  position: relative;
+  img{
+    transition: 0.5s;
+  }
+  //.thumb-overlay {
+  //  position: absolute;
+  //  display: inline-block;
+  //  content: '';
+  //  height: 100%;
+  //  width: 100%;
+  //  top: 0;
+  //  left: 0;
+  //  background-color: $brand-primary;
+  //  opacity: 0;
+  //  transition: 0.3s;
+  //}
+  &:hover {
+   img{
+     @include transform(scale(1.05));
+   }
+  }
+}

@@ -1,0 +1,220 @@
+// Custom Font Imports
+@import "_webfonts.scss";
+
+
+
+// Layout 
+//---------------------------------------------//
+
+.page {
+
+	.bg-image-1 {
+		background-image: url('../content/images/background-4.jpg');
+		h1, p {
+			color: #fff;
+		}
+	}
+	.bg-image-2 {
+		background-image: url('../content/images/background-2.jpg');
+		h1, p {
+			color: #fff;
+		}
+	}
+	.bg-image-3 {
+		background-image: url('../content/images/background-3.jpg');
+		h1, p {
+			color: #fff;
+		}
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.well-parallax:before {
+	    height: 30%;
+	}
+}
+
+// Typography 
+//---------------------------------------------//
+
+h1, h2, h3, h4, h5, h6 {
+	color: $blue;
+	font-family: 'HAVEANICEDAYBasic-Bold', Sans-Serif;
+}
+
+.cabins {
+	h1, h2, h3, h4, h5, h6, a {
+		color: $orange;
+	}
+	.btn-primary {
+		background: $orange;
+		color: #fff;
+		border-color: $orange;
+		span {
+			transition: all 0.5s ease;
+			position: relative;
+		}
+		&:hover, &:active {
+			color: $orange;
+			border-color: $orange;
+			span {
+				left: 5px;
+			}
+		}
+	}
+}
+
+.camping {
+	h1, h2, h3, h4, h5, h6, a {
+		color: $green;
+	}
+	.btn-primary {
+		background: $green;
+		color: #fff;
+		border-color: $green;
+		span {
+			transition: all 0.5s ease;
+			position: relative;
+		}
+		&:hover, &:active {
+			color: $green;
+			border-color: $green;
+			span {
+				left: 5px;
+			}
+		}
+	}
+}
+
+// Header 
+//---------------------------------------------//
+
+header.page-header {
+	.logo {
+		width: 260px;
+	}
+	.rd-navbar-nav {
+
+		a.booknow {
+			color: #fff;
+			font-size: 0.8em;
+    		padding: 0 15px;
+		}
+
+	}
+
+	.jumbotron {
+
+		h1 {
+			margin-bottom: 80px;
+		}
+		p.big {
+			color: #fff;
+		}
+	}
+
+}
+
+
+
+
+// Main Section 
+//---------------------------------------------//
+
+main.page-content {
+
+}
+
+/* Cabins */
+.cabins {
+
+	.badge {
+	padding: 0 10px;
+    border-radius: 30px;
+    background: $blue-grey;
+    margin: 0 5px 0 0 !important;
+    color: #fff;
+    	&:before {
+    		color: #fff;
+    	}
+    	&:hover {
+    		color: #fff;
+    		background: lighten($blue-grey,10%);
+    	}
+    	&.fa-info-circle:before {
+    		padding-right: 0;
+    	}
+	}
+
+	.row {
+		margin-bottom: 2em;
+	}
+
+
+}
+
+
+.specials {
+	padding: 2em;
+	background: $orange;
+	color: #fff;
+
+	h4, a {
+		color: #fff;
+	}
+
+	.btn-default {
+		background: #fff;
+		color: $orange;
+		border-color: #fff;
+		span {
+			transition: all 0.5s ease;
+			position: relative;
+		}
+		&:hover, &:active {
+			background: $orange;
+			color: #fff;
+			border-color: #fff;
+			span {
+				left: 5px;
+			}
+		}
+	}
+
+}
+
+
+/* Caravans */
+.camping {
+	img {
+		box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+	}
+}
+// Footer 
+//---------------------------------------------//
+
+footer.page-footer {
+	
+	&.dark {
+		.logoalt {
+			max-width: 100px;
+		}
+		.footer-content {
+			background: lighten($blue-light,15%);
+
+			.contact-info {
+				max-width: none;
+			}
+		}
+
+		.copyright {
+			background: $blue;
+			* {
+				color: lighten($blue-light,15%);
+			}
+		}
+	}
+}
+
+
