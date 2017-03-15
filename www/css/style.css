@@ -9742,19 +9742,61 @@ h1, h2, h3, h4, h5, h6 {
     .camping .btn-primary:hover span, .camping .btn-primary:active span {
       left: 5px; }
 
-header.page-header .logo {
-  width: 260px; }
+header.page-header .logo-navbar {
+  width: 180px;
+  display: block; }
+
+header.page-header .logo-header {
+  display: none; }
+
+header.page-header .rd-navbar {
+  padding-top: 0; }
+
+header.page-header .rd-navbar--is-stuck {
+  padding: 6px 0; }
+  header.page-header .rd-navbar--is-stuck .logo-header {
+    display: block;
+    float: left;
+    max-width: 280px; }
+  header.page-header .rd-navbar--is-stuck ul li a {
+    padding: 16px 0; }
+
+header.page-header .rd-navbar-nav ul.rd-navbar-nav {
+  margin-top: 0; }
 
 header.page-header .rd-navbar-nav a.booknow {
   color: #fff;
   font-size: 0.8em;
   padding: 0 15px; }
 
+header.page-header .jumbotron .logo {
+  margin-top: 75px;
+  margin-bottom: 60px;
+  width: 344px; }
+
 header.page-header .jumbotron h1 {
-  margin-bottom: 80px; }
+  margin-bottom: 10px;
+  font-size: 48px;
+  color: #fff; }
+
+header.page-header .jumbotron h2 {
+  color: #fff;
+  font-size: 50px; }
 
 header.page-header .jumbotron p.big {
   color: #fff; }
+
+@media (min-width: 768px) {
+  header.page-header .logo-navbar {
+    display: none; } }
+
+/* Welcome Section */
+@media (max-width: 768px) {
+  .welcome {
+    padding-top: 100px;
+    text-align: center !important; }
+    .welcome .col-sm-6 {
+      padding-bottom: 20px; } }
 
 /* Cabins */
 .cabins .badge {
