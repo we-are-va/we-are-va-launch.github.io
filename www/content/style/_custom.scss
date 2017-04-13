@@ -5,7 +5,16 @@
 
 // Layout 
 //---------------------------------------------//
-
+.logo-big4 {
+	position: absolute;
+    top: -18px;
+    right: 25px;
+    width: 87px;
+}
+.rd-navbar--is-stuck .logo-big4 {
+    top: 0;
+    right: -30px;
+}
 .page {
 
 	.bg-image-1 {
@@ -20,7 +29,7 @@
 			color: #fff;
 			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
 		}
-	}
+	}  
 	.bg-image-3 {
 		background-image: url('../content/images/background-3.jpg');
 		h1, p {
@@ -32,7 +41,7 @@
 
 @media (min-width: 1200px) {
 	.well-parallax:before {
-	    height: 30%;
+	    height: 31%;
 	}
 }
 
@@ -157,6 +166,16 @@ header.page-header {
 		display: none;
 	}
 }
+.secondary-page {
+@media (min-width: 768px) {
+	header.page-header .logo-navbar {
+		display: block;
+		float: left;
+    	max-width: 280px;
+    	width: auto;
+	}
+}
+}
 
 // Main Section 
 //---------------------------------------------//
@@ -203,10 +222,26 @@ main.page-content {
 	.row {
 		margin-bottom: 2em;
 	}
+	
+	.img {
+		padding: 0;
+		margin: 0;
+		&.main {
+			margin-bottom: 5px;
+		}
+		&.col-xs-4 {
+			padding: 0;
+			border: solid 1px #fff;
+		}
+	}
 
 
 }
-
+.cabin-page {
+	.caption {
+		margin-top: 0;
+	}
+}
 
 .specials {
 	padding: 2em;

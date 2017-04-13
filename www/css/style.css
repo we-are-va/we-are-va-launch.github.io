@@ -9686,6 +9686,16 @@ html.boxed .page {
   src: url("../content/type/332529_2_0.eot");
   src: url("../content/type/332529_2_0.eot?#iefix") format("embedded-opentype"), url("../content/type/332529_2_0.woff2") format("woff2"), url("../content/type/332529_2_0.woff") format("woff"), url("../type/332529_2_0.ttf") format("truetype"); }
 
+.logo-big4 {
+  position: absolute;
+  top: -18px;
+  right: 25px;
+  width: 87px; }
+
+.rd-navbar--is-stuck .logo-big4 {
+  top: 0;
+  right: -30px; }
+
 .page .bg-image-1 {
   background-image: url("../content/images/background-4.jpg"); }
   .page .bg-image-1 h1, .page .bg-image-1 p {
@@ -9704,7 +9714,7 @@ html.boxed .page {
 
 @media (min-width: 1200px) {
   .well-parallax:before {
-    height: 30%; } }
+    height: 31%; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #006699;
@@ -9790,6 +9800,13 @@ header.page-header .jumbotron p.big {
   header.page-header .logo-navbar {
     display: none; } }
 
+@media (min-width: 768px) {
+  .secondary-page header.page-header .logo-navbar {
+    display: block;
+    float: left;
+    max-width: 280px;
+    width: auto; } }
+
 /* Welcome Section */
 @media (max-width: 768px) {
   .welcome {
@@ -9815,6 +9832,18 @@ header.page-header .jumbotron p.big {
 
 .cabins .row {
   margin-bottom: 2em; }
+
+.cabins .img {
+  padding: 0;
+  margin: 0; }
+  .cabins .img.main {
+    margin-bottom: 5px; }
+  .cabins .img.col-xs-4 {
+    padding: 0;
+    border: solid 1px #fff; }
+
+.cabin-page .caption {
+  margin-top: 0; }
 
 .specials {
   padding: 2em;
