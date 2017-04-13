@@ -9807,6 +9807,9 @@ header.page-header .jumbotron p.big {
     max-width: 280px;
     width: auto; } }
 
+.secondary-page .logo-big4 {
+  right: -30px; }
+
 /* Welcome Section */
 @media (max-width: 768px) {
   .welcome {

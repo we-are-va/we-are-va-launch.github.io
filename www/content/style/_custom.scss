@@ -167,14 +167,19 @@ header.page-header {
 	}
 }
 .secondary-page {
-@media (min-width: 768px) {
-	header.page-header .logo-navbar {
-		display: block;
-		float: left;
-    	max-width: 280px;
-    	width: auto;
+	
+	@media (min-width: 768px) {
+		header.page-header .logo-navbar {
+			display: block;
+			float: left;
+	    	max-width: 280px;
+	    	width: auto;
+		}
 	}
-}
+
+	.logo-big4 {
+    	right: -30px;
+    }
 }
 
 // Main Section 
