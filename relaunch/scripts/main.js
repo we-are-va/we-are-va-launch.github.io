@@ -60,7 +60,7 @@ function dovivus(){
     start: 'autostart',
     pathTimingFunction: Vivus.LINEAR,
     type: 'sync',
-    file: '/images/artwork' + index + '.svg',
+    file: 'images/artwork' + index + '.svg',
     // onReady: function (myVivus) {
     //     // `el` property is the SVG element
     //     document.getElementById('artwork' + index).style.opacity = 1;//('opacity', '1');
