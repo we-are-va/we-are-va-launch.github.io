@@ -4,13 +4,12 @@ console.log("Hello, welcome to VA Relaunch!");
 var svg_el = document.getElementsByClassName("artwork");
 var current_svg  = 0; // Current SVG in rotation
 var max_svgs     = svg_el.length; // Amount of SVGS
-var i = 0, svgs = [];
+var i = 0, svg_reset = [];
 var pathType = "sync";
 var duration = 2000;
 var background = "";
 for (i = 0; i < svg_el.length; i++) {
-  //console.log(svg_el[i].getAttribute("id"));
-  svgs[i] = svg_el[i];
+  svg_reset[i] = false;
 }
 
 function sleep(milliseconds) {
@@ -27,20 +26,27 @@ function next( ){
 
   svg_el[current_svg].style.opacity = 0;
 
+  svg_reset[current_svg] =  svg_reset[current_svg] == true ? false : true;
+
+  myVivus.reset();//.play();
   // stop for sometime if needed
   setTimeout(function() {
    // svg_el[current_svg].style.opacity = 0;
     current_svg++;
-    console.log(current_svg);
     if(current_svg == max_svgs) {
       current_svg = 0;
-    } 
+    }
+   // myVivus.reset();
     animate_svg();
-  }, 5000);
+  }, 3000);
+
+
 } 
   
 function animate_svg(){
+
   console.log("Do vivus! --> Artwork #" + current_svg);
+
   svg_el[current_svg].style.opacity = 1;
   
   pathType = svg_el[current_svg].getAttribute("data-path-type");
@@ -53,20 +59,19 @@ function animate_svg(){
   if(background) { document.getElementsByTagName("BODY")[0].style.backgroundColor = "#" + background; }
   else { document.getElementsByTagName("BODY")[0].style.backgroundColor = "#fff"; }
 
+  //console.log("Reset for " + current_svg + ": " + svg_reset[current_svg]);
 
-  new Vivus(svg_el[current_svg].getAttribute("id"), { 
-    duration: duration,
-    start: 'autostart',
-    pathTimingFunction: Vivus.EASE,
-    type: pathType, //'sync', 'oneByOne',
-    file: '/images/artwork' + current_svg + '.svg',
-    // onReady: function (myVivus) {
-    //     // `el` property is the SVG element
-    //     document.getElementById('artwork' + current_svg).style.opacity = 1;//('opacity', '1');
-    //   }
+  myVivus = new Vivus(svg_el[current_svg].getAttribute("id"), {
+      duration: 500,//duration,
+      start: 'autostart',
+      pathTimingFunction: Vivus.EASE,
+      reverseStack: svg_reset[current_svg],
+      type: pathType, 
     },
     next
   );
+
+
 } 
 
 // **************** 
