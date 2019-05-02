@@ -28,7 +28,7 @@ function next( ){
 
   svg_reset[current_svg] =  svg_reset[current_svg] == true ? false : true;
 
-  myVivus.reset();//.play();
+  myVivus.destroy();//.play();
   // stop for sometime if needed
   setTimeout(function() {
    // svg_el[current_svg].style.opacity = 0;
